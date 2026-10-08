@@ -45,9 +45,10 @@ p{
     font-family: "Igra Sans";
 }
 .header-top-wrapper {
-    background: linear-gradient(90deg, #3d6da0 0%, #7b7b7b 100%);
+    background: #fff;
     padding: 20px 0;
-    background: linear-gradient(90deg, #3D6DA0 -84.3%, #7B7B7B 100%);
+    /* background: linear-gradient(90deg, #3D6DA0 -84.3%, #7B7B7B 100%); */
+    color: #000;
 }
 .breadcrumb a {
     text-decoration: none;
@@ -61,8 +62,9 @@ p{
 .header-top {
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
-    color: #fff;
+    font-size: 18px;
+    color: #000000;
+    align-items: center;
 }
 
 .header-top-contacts {
@@ -74,7 +76,7 @@ p{
 }
 
 .header-top-addr a, .header-top-contacts a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -111,6 +113,10 @@ body {
 }
 .header-top-buttons .button {
     font-size: 15px;
+    background: #417EEA;
+    color: #fff;
+    padding: 14px 20px;
+    /* line-height: 19px; */
 }
 .close-search {
     display: none;
@@ -239,8 +245,8 @@ body {
 }
 section.section-main-banner {
     position: relative;
-    background: radial-gradient(509.21% 134.96% at 65.31% 54.34%, #B6B9C0 0%, #55575A 100%););););
-    color: #fff;
+    /* background: radial-gradient(509.21% 134.96% at 65.31% 54.34%, #B6B9C0 0%, #55575A 100%); */);););
+    /* color: #fff; */
 }
 
 .main-banner {
@@ -249,7 +255,7 @@ section.section-main-banner {
 }
 
 .main-banner-title {
-    color: #FFF;
+    color: #000000;
     font-family: "Igra Sans";
     font-size: 55px;
     font-style: normal;
@@ -274,7 +280,7 @@ section.section-main-banner {
 }
 
 .main-banner-text {
-    color: #FFF;
+    color: #000000;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -285,12 +291,12 @@ section.section-main-banner {
 .main-banner-bg-image {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0px;
     width: 100%;
     height: 100%;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index: 1;
 }
 .main-banner-bg-image:before {
@@ -302,7 +308,7 @@ section.section-main-banner {
     background: #000;
     width: 100%;
     height: 100%;
-    opacity: .5;
+    opacity: 0.05;
 }
 .button {
     display: block;
@@ -321,8 +327,9 @@ section.section-main-banner {
 }
 
 .button-white {
-    background: #fff;
-    color: #000;
+    background: #417EEA;
+    color: #ffffff;
+    font-size: 16px;
 }
 .button-black {
     background: #000;
@@ -333,24 +340,24 @@ section.section-main-banner {
 	border: solid 1px;
 }
 .main-banner .button {
-    padding: 20px;
+    padding: 16px 45px;
 }
 .contacts-info-button button {
     margin: 0 auto;
 }
 section.section-services {
-    background: radial-gradient(48.11% 43.68% at 4.17% 6.43%, #BCD9FB 0%, #FFF 100%);
+    /* background: radial-gradient(48.11% 43.68% at 4.17% 6.43%, #BCD9FB 0%, #FFF 100%); */
     padding: 110px 0 25px;
 }
 
 .section-title {
     font-family: "Igra Sans";
-    font-size: 55px;
+    font-size: 52px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    letter-spacing: -0.55px;
-    margin-bottom: 60px;
+    /* letter-spacing: -0.55px; */
+    margin-bottom: 80px;
 }
 
 
@@ -375,27 +382,27 @@ section.section-services {
 }
 .services-listing-category>a, .services-listing-category>span {
     display: block;
-    color: #003FA5;
-    font-family: "Igra Sans";
-    font-size: 25px;
+    color: #1B2840;
+    /* font-family: "Igra Sans"; */
+    font-size: 28px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 100%;
-    letter-spacing: -0.25px;
+    /* letter-spacing: -0.25px; */
     text-decoration: none;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .services-listing-posts {
-    padding-left: 35px;
+    /* padding-left: 35px; */
     display: flex;
     flex-direction: column;
-    border-left: 1px solid #C5C5C5;
+    /* border-left: 1px solid #C5C5C5; */
 }
 
 .services-listing-posts>a {
-    color: #000;
-    font-family: Inter;
+    color: #A6ABB5;
+    /* font-family: Inter; */
     font-size: 14px;
     font-style: normal;
     margin-bottom: 15px;
@@ -412,13 +419,13 @@ section.section-services {
 }
 
 section.section-about-us {
-    background: radial-gradient(313.98% 145.12% at 27.4% 25.6%, #9B9B9B 0%, #353535 100%);
+    /* background: radial-gradient(313.98% 145.12% at 27.4% 25.6%, #9B9B9B 0%, #353535 100%); */
     padding: 110px 0;
-    color: #fff;
+    color: #000000;
 }
 
 .about-us-text {
-    color: #FFF;
+    color: #000000;
     font-family: Inter;
     font-size: 22px;
     font-style: normal;
@@ -459,12 +466,16 @@ section.section-about-us {
     justify-content: space-between;
     flex-direction: column;
     margin-right: 10px;
+    background: #F3F8FE;
+    border-radius: 16px;
 }
 
 .abut-us-advantages-item.item_1 {
     height: 460px;
     text-align: center;
     padding: 110px 73px;
+    background: #417EEA;
+    border-radius: 12px;
 }
 
 .abut-us-advantages-right .abut-us-advantages-item:nth-child(even) {
@@ -497,11 +508,14 @@ section.section-about-us {
 
 
 .item_1 .advantages-item-text {
-    font-size: 20px;
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
 }
 
 .item_1 .advantages-item-header {
     font-size: 110px;
+    color: #fff;
 }
 
 section.section-block-button {
@@ -1054,6 +1068,7 @@ footer#footer .footer-bottom a {
 
 .header-menu ul li {
     margin-right: 30px;
+    margin-bottom: 0;
 }
 
 .wpcf7-acceptance .wpcf7-list-item {
@@ -1667,6 +1682,11 @@ section.section-vacancy {
     padding-bottom: 3px;
     border-bottom: 1px solid #e7e7e7;
 }
+
+.myfixedHeader, .myfixedHeader a {
+    color: #000 !important;
+}
+
 .myfixedHeader .contacts-phones-full a {
     color: #000 !important;
 }

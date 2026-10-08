@@ -9,6 +9,8 @@
  * @package dominant
  */
 
+
+
 $org_name   = get_field('org_name', 'options');
 $work_time  = get_field('work_time', 'options');
 //$phone      = get_field('phone', 'options');
@@ -35,23 +37,8 @@ $services_tree = get_taxonomy_tree('services', 'service');
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
-</head>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-    <header id="masthead" class="site-header">
-        <div class="header-top-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="header-top">
-                            <div class="header-top-addr">
-                                <?=$address['city'] .', '. $address['addr'] ?>
-                            </div>
-							
-							
-<!-- Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -66,12 +53,40 @@ $services_tree = get_taxonomy_tree('services', 'service');
 <!-- /Yandex.Metrika counter -->
 
 
+</head>
+
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+
+
+<div id="page" class="site">
+    <header id="masthead" class="site-header">
+        <div class="header-top-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header-top">
+                            <div class="header-logo">
+                                <div class="logo"><img src="<?=$logo?>" alt=""></div>
+                            </div>
+							
+			                <div class="header-menu">
+                                <?php
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location' => 'main',
+                                        'menu_id'        => 'main-menu',
+                                    )
+                                );
+                                ?>				
+                            </div>
+
 
 							
                             <div class="header-top-contacts">
                                 <div class="contacts-phones">
                                     <div class="contacts-phones-opener">
-                                        <img src="<?=get_template_directory_uri() . '/assets/images/icons/phone_white.svg'?>" alt="Телефон">
+                                     
                                         <a href="tel:<?=clear_phone($phones[0]['phone']) ?>"><?=$phones[0]['phone'] ?></a>
                                     </div>
                                     <?if(count($phones) > 1):?>
@@ -82,14 +97,7 @@ $services_tree = get_taxonomy_tree('services', 'service');
                                     </div>
                                     <?endif;?>
                                 </div>
-                                <div class="contacts-email">
-                                    <img src="<?=get_template_directory_uri() . '/assets/images/icons/mail_white.svg'?>" alt="E-mail">
-                                    <a href="mailto:<?=$email ?>"><?=$email ?></a>
-                                </div>
-                                <div class="contacts-work-time">
-                                    <img src="<?=get_template_directory_uri() . '/assets/images/icons/time_white.svg'?>" alt="Время работы"/>
-                                    <?=$work_time?>
-                                </div>
+                                
                             </div>
                             <div class="header-top-buttons">
 <!--                                <a class="button button-white" href="#">Обратный звонок</a>-->
@@ -101,45 +109,7 @@ $services_tree = get_taxonomy_tree('services', 'service');
             </div>
         </div>
         <div class="header-bottom-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="header-bottom">
-                            <div class="header-logo">
-                                <?php if(is_front_page()): ?>
-                                    <div class="logo"><img src="<?=$logo?>" alt=""></div>
-                                    <div class="logo-inverse"><img src="<?=$logo_inverse?>" alt=""></div>
-                                <?php else: ?>
-                                    <a class="logo" href="/" title=""><img src="<?=$logo?>" alt=""></a>
-                                    <a class="logo-inverse" href="/" title=""><img src="<?=$logo_inverse?>" alt=""></a>
-                                <?php endif; ?>
-                            </div>
-                            <div class="header-menu">
-                                <?php
-                                wp_nav_menu(
-                                    array(
-                                        'theme_location' => 'main',
-                                        'menu_id'        => 'main-menu',
-                                    )
-                                );
-                                ?>
-                                <div class="header-search-button">
-                                    <div class="search-toggle">
-                                        <div class="open-search">
-                                            <img src="<?= get_template_directory_uri() . '/assets/images/icons/search_white.svg' ?>" alt="search open">
-                                        </div>
-                                        <div class="close-search">
-                                            <img src="<?= get_template_directory_uri() . '/assets/images/icons/close_black.svg' ?>" alt="search close">
-                                        </div>
 
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="mobile">
                 <div class="mobile-header">
                     <div class="mobile-menu-toggler">

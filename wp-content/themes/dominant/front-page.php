@@ -104,8 +104,10 @@ $blog_items = get_posts( array(
             <div class="container">
                 <div class="row">
                     <div class="col">
+                        <div class="row">
                         <div class="section-title about-us-title"><?=$about['header'] ?></div>
                         <div class="about-us-text"><?=$about['text'] ?></div>
+                                    </div>
                         <div class="abut-us-advantages">
                             <?php $i = 1;
                             ?>
