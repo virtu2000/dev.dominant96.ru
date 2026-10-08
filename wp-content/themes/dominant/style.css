@@ -1,0 +1,374 @@
+/*
+Theme Name: dominant
+Description: dominant
+Version: 1.0.0
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Дополнительные сбросы и улучшения (опционально) */
+
+/* Указываем box-sizing: border-box для упрощения работы с размерами */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Сбрасываем ссылки */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Сбрасываем выделение цветом фона для выделенного текста */
+::selection {
+    background: transparent; /* Или укажите нужный вам цвет */
+}
+
+/* Убираем стандартные стили для кнопок */
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none; /* Убираем обводку при фокусе */
+}
+
+/* Убираем стандартные стили для полей ввода */
+input, textarea, select {
+    border: none;
+    outline: none;
+    background: none;
+    font: inherit;
+}
+
+/* Убираем outline у фокуса на кликабельных элементах */
+*:focus {
+    outline: none;
+}
+
+/* ==========================================================================
+   Базовые настройки и переменные
+   ========================================================================== */
+:root {
+  --color-primary: #4e80f2;
+  --color-primary-dark: #3a6cd9;
+  --color-text-main: #1f242e;
+  --color-text-muted: #6c757d;
+  --color-bg-light: #f4f6f9;
+  --color-white: #ffffff;
+  --border-radius-card: 12px;
+  --border-radius-btn: 24px;
+  --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-text-main);
+  background-color: var(--color-white);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   Главный баннер (Первый экран)
+   ========================================================================== */
+.section-main-banner {
+  padding: 60px 0 80px;
+  background: radial-gradient(circle at 80% 50%, rgba(225, 235, 255, 0.4) 0%, rgba(255, 255, 255, 0) 60%);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-banner-content {
+  max-width: 520px;
+}
+
+.main-banner-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-text-main);
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.main-banner-text {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+
+.button-blue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: var(--border-radius-btn);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.button-blue:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.main-banner-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* ==========================================================================
+   Секция «Наши услуги»
+   ========================================================================== */
+.section-services {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: var(--color-text-main);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background-color: var(--color-bg-light);
+  border-radius: var(--border-radius-card);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card-icon {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.service-card-icon img {
+  max-height: 100%;
+  width: auto;
+}
+
+.service-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-text-main);
+}
+
+.service-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-card-list a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.service-card-list a:hover {
+  color: var(--color-primary);
+}
+
+.service-card-list li:first-child a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Секция «О нас»
+   ========================================================================== */
+.section-about-us {
+  padding: 80px 0;
+}
+
+.about-us-header-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+  align-items: start;
+}
+
+.about-us-description {
+  font-size: 16px;
+  color: var(--color-text-main);
+  line-height: 1.6;
+}
+
+.about-us-advantages-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(140px, auto));
+  gap: 20px;
+}
+
+/* Синяя плашка с акцентом */
+.about-us-card.card-primary {
+  grid-row: span 2;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--border-radius-card);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  background-image: url('assets/images/scales-bg.svg'); /* Иконка весов в фоне */
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 180px;
+}
+
+.about-us-card.card-primary .card-number {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.about-us-card.card-primary .card-text {
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 300px;
+  opacity: 0.95;
+}
+
+/* Светлые карточки статистики */
+.about-us-card.card-stat {
+  background-color: var(--color-bg-light);
+  border-radius: var(--border-radius-card);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us-card.card-stat .card-number {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.about-us-card.card-stat .card-label {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   Адаптив (Mobile / Tablet)
+   ========================================================================== */
+@media (max-width: 991px) {
+  .main-banner-title {
+    font-size: 36px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-header-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-us-advantages-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-us-card.card-primary {
+    grid-row: auto;
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us-advantages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-card.card-primary {
+    grid-column: span 1;
+  }
+}
+```[cite: 1]

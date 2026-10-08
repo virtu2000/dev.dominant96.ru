@@ -1,0 +1,332 @@
+@media (max-width: 768px) {
+    .mobile{
+        display: block;
+    }
+    .header-top {
+        display: none;
+    }
+
+    .header-top-wrapper {
+        display: none;
+    }
+
+    .header-bottom {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+        background: radial-gradient(157.57% 122.61% at -50.97% 45.46%, #BCD9FB 5.26%, #FFF 100%);
+        color: #000;
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        padding-top: 160px;
+    }
+
+    .mobile-menu a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .mobile-menu ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(90deg, #3D6DA0 -84.3%, #7B7B7B 100%);
+        padding: 15px;
+        align-items: flex-start;
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+    }
+
+    .mobile-menu li {
+        margin-bottom: 10px;
+    }
+
+    .mobile-menu ul {
+        border-bottom: 1px solid #AEAEAE;
+        margin-bottom: 20px;
+    }
+
+    .mobile {
+        font-family: Inter;
+        position: relative;
+    }
+
+    .menu-info-phone a {
+        font-size: 16px;
+    }
+
+    .menu-info-worktime {
+        font-size: 12px;
+    }
+
+    .menu-info-addr {
+        font-size: 12px;
+    }
+
+    .menu-info-email a {
+        font-size: 12px;
+    }
+
+    .mobile-menu-info > * {
+        margin-bottom: 10px;
+    }
+
+    .menu-info-social {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .mobile-menu-info {
+        border-bottom: 1px solid #AEAEAE;
+        /* margin-bottom: 10px; */
+    }
+
+    .mobile-services-listing-category > a {
+        font-family: "Igra Sans";
+        font-size: 16px;
+        display: block;
+    }
+
+    .mobile-services-listing-posts {
+        display: none;
+        padding-top: 20px;
+    }
+    .mobile-services-listing-posts a {
+        display: flex;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .mobile-services-listing-category {
+        border-bottom: 1px solid #AEAEAE;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    .mobile-services-listing-category-opener {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        top: 10px;
+        padding: 10px;
+    }
+
+    .mobile-services-listing-category-opener img {
+        width: 100%;
+    }
+
+    .mobile-services-listing-category.opened .mobile-services-listing-category-opener {
+        transform: rotate(180deg);
+        opacity: .3;
+    }
+
+    .opened .mobile-header {background: none;}
+
+    .opened .mobile-menu-toggler .open-mobile-menu{
+        display: none;
+    }
+    .opened .mobile-menu-toggler .close-mobile-menu{
+        displaybl;
+        display: block;
+        width: 24px;
+    }
+
+    .close-mobile-menu {
+        display: none;
+    }
+
+    .close-mobile-menu img {
+        width: 100%;
+    }
+
+
+
+    .header-search {
+        position: fixed;
+        z-index: 99;
+    }
+    .search-opened .mobile-header {
+        background: no-repeat;
+    }
+    .main-banner-content {
+        width: 100%;
+    }
+    .main-banner-image {
+        display: none;
+    }
+    .main-banner-title {
+        font-size: 30px;
+    }
+    .main-banner-text {
+        font-size: 14px;
+    }
+    section {
+        padding: 60px 0 !important;!i;!;
+    }
+    .section-title {
+        font-size: 30px !important;!i;!;
+    }
+    .services-listing {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .services-listing-category {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .services-listing-posts {
+        border: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .services-listing-category>a {margin-bottom: 20px;}
+    body * {
+        font-size: 15px;
+    }
+    .abut-us-advantages-item {
+        width: 100%;
+        padding: 40px 16px !important;!i;!;
+        margin-bottom: 10px;
+        height: auto !important;!i;!;
+        text-align: center;
+    }
+    .abut-us-advantages-left {
+        width: 100%;
+        margin: 0;
+    }
+    .abut-us-advantages-right {
+        width: 100%;
+        margin: 0;
+    }
+    .abut-us-advantages {
+        flex-direction: column;
+    }
+    .advantages-item-header, .item_1 .advantages-item-header {
+        font-size: 55px;
+    }
+    .abut-us-advantages-right .abut-us-advantages-item {
+        width: 100%;
+        margin-right: 0;
+    }
+    .block-button-text-2 {
+        font-size: 40px;
+    }
+    .partners-item {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+    .partners-items {
+        height: 445px;
+    }
+    .main-map-info {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .map {
+        position: relative;
+    }
+	.contacts-map {
+		height: 300px;
+	}
+	section.section-contacts-body {
+		padding-bottom: 0 !important;!i;!;
+	}
+    .footer-row > div {
+        width: 100%;
+    }
+    .footer-row {
+        flex-direction: column;
+    }
+    .footer-bottom>div {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .footer-bottom-left {
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-bottom {
+        flex-direction: column;
+    }
+    .form-col-2 {
+        width: 100%;
+        margin-right: 0;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+
+
+
+    .auction-item-image {
+        width: 100%;
+        margin-right: 0;
+    }
+    .auction-item-description {
+        width: 100%;
+    }
+    .auction-item-body {
+        flex-wrap: wrap;
+    }
+    .single-top-announce {
+        width: 100%;
+        margin-left: 0;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .auction-item-price {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .auction-item-endorder {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .auction-item-region {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .auction-item-link {
+        width: 100%;
+    }
+    .auction-item-bottom {
+        flex-wrap: wrap;
+    }
+    .auction-item {
+        margin-bottom: 30px;
+    }
+
+    .employees-listing{
+        width: 100%;
+        margin-left: 0;
+    }
+    .employees-listing-item {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+}

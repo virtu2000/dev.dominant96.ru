@@ -1,0 +1,6 @@
+{
+    "php.version": "8.1",
+"intelephense.environment.includePaths": [
+  ],
+"intelephense.files.maxSize": 5000000
+}

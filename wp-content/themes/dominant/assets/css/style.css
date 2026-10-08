@@ -1,0 +1,1711 @@
+@font-face {
+    font-family: 'Igra Sans';
+    src: url('../fonts/IgraSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'KharkivTone';
+    src: url('../fonts/KharkivTone.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+section {
+    padding: 50px 0;
+}
+ol {
+    padding-left: 30px;
+}
+li {
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 20px;
+}
+.breadcrumb a span {
+    color: #000;
+}
+.breadcrumb span {
+    color: #7D7D7D;
+}
+#breadcrumbs * {
+    font-family: "Igra Sans";
+}
+.header-top-wrapper {
+    background: linear-gradient(90deg, #3d6da0 0%, #7b7b7b 100%);
+    padding: 20px 0;
+    background: linear-gradient(90deg, #3D6DA0 -84.3%, #7B7B7B 100%);
+}
+.breadcrumb a {
+    text-decoration: none;
+}
+.breadcrumb > span {
+    margin: 0 5px;
+}
+.breadcrumb > span:first-child {
+    margin-left: 0;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #fff;
+}
+
+.header-top-contacts {
+    display: flex;
+}
+
+.header-top-contacts > div {
+    margin-right: 20px;
+}
+
+.header-top-addr a, .header-top-contacts a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+.header-bottom-wrapper {
+    position: relative;
+    background: linear-gradient(0deg, rgba(120, 154, 192, 0.50) -67.79%, rgba(255, 255, 255, 0.50) 66.59%);
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    padding: 21px 0;
+    align-items: center;
+    position: relative;
+}
+.logo-inverse{
+    display: none;
+}
+.header-search {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: radial-gradient(313.98% 145.12% at 27.4% 25.6%, rgb(155, 155, 155) 0%, rgb(53, 53, 53) 100%);
+    top: 0;
+    left: 0;
+    height: 625px;
+    z-index: 2;
+    padding: 180px 0;
+}
+.header-top-buttons .button {
+    font-size: 15px;
+}
+.close-search {
+    display: none;
+}
+
+.open-search {
+    cursor: pointer;
+}
+
+.search-opened .header-bottom a {
+    color: #fff;
+}
+
+.search-opened .open-search {
+    display: none;
+}
+
+.search-opened .close-search {
+    display: block;
+}
+
+.search-toggle {
+    cursor: pointer;
+}
+
+.header-search-title {
+    color: #FFF;
+    font-family: "Igra Sans";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.55px;
+    margin-bottom: 50px;
+}
+
+.header-search-form #searchform {
+    margin-bottom: 0;
+}
+
+.header-search-form input[type="text"] {
+    width: 65%;
+    background: no-repeat;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 50px;
+    border-bottom: 1px solid;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #D0D0D0;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #D0D0D0;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #D0D0D0;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #D0D0D0;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+}
+
+.header-search-form input[type="submit"] {
+    width: 180px;
+    color: #000;
+    font-family: "Igra Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    padding: 12px;
+}
+
+.search-opened .logo-inverse{
+    display:block;
+}
+.search-opened .logo{
+    display:none;
+}
+.header-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-menu a {
+    color: #000;
+    text-decoration: none;
+    transition: .6s;
+}
+
+.header-menu {
+    display: flex;
+}
+.header-search .container {
+    opacity: 0;
+    transition: .5s;
+}
+.search-opened .header-search .container {
+    opacity: 1;
+}
+section.section-main-banner {
+    position: relative;
+    background: radial-gradient(509.21% 134.96% at 65.31% 54.34%, #B6B9C0 0%, #55575A 100%););););
+    color: #fff;
+}
+
+.main-banner {
+    display: flex;
+    padding: 110px 0;
+}
+
+.main-banner-title {
+    color: #FFF;
+    font-family: "Igra Sans";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.55px;
+    margin-bottom: 50px;
+}
+
+.main-banner-content {
+    width: 60%;
+    z-index: 2;
+}
+
+.main-banner-image {
+    width: 40%;
+    z-index: 2;
+}
+
+.main-banner-image img {
+    width: 100%;
+}
+
+.main-banner-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 70px;
+}
+.main-banner-bg-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.main-banner-bg-image:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+.button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    padding: 7px 14px;
+    max-width: 300px;
+    font-family: "Igra Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.button-white {
+    background: #fff;
+    color: #000;
+}
+.button-black {
+    background: #000;
+    color: #fff;
+}
+
+.button-bordered {
+	border: solid 1px;
+}
+.main-banner .button {
+    padding: 20px;
+}
+.contacts-info-button button {
+    margin: 0 auto;
+}
+section.section-services {
+    background: radial-gradient(48.11% 43.68% at 4.17% 6.43%, #BCD9FB 0%, #FFF 100%);
+    padding: 110px 0 25px;
+}
+
+.section-title {
+    font-family: "Igra Sans";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.55px;
+    margin-bottom: 60px;
+}
+
+
+
+.services-listing {
+    width: 75%;
+    /* margin-left: 25%; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-title.services-title {}
+
+.services-listing-category {
+    width: 50%;
+	padding-bottom: 85px;
+    padding-right: 45px;
+}
+.services-listing-category:nth-child(even){
+    padding-right: 0;
+    padding-left: 45px;
+}
+.services-listing-category>a, .services-listing-category>span {
+    display: block;
+    color: #003FA5;
+    font-family: "Igra Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.25px;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.services-listing-posts {
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #C5C5C5;
+}
+
+.services-listing-posts>a {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+}
+.services-listing-posts>a:hover {
+    color: #7D7D7D;
+}
+.services-listing-posts>a:last-child {
+    margin-bottom: 0;
+}
+
+section.section-about-us {
+    background: radial-gradient(313.98% 145.12% at 27.4% 25.6%, #9B9B9B 0%, #353535 100%);
+    padding: 110px 0;
+    color: #fff;
+}
+
+.about-us-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    margin-bottom: 50px;
+}
+
+.abut-us-advantages {
+    display: flex;
+}
+
+.abut-us-advantages-left {
+    width: 50%;
+    margin-right: 5px;
+}
+
+.abut-us-advantages-right {
+    width: 50%;
+    margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.abut-us-advantages-item {
+    background: #fff;
+    color: #000;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.abut-us-advantages-right .abut-us-advantages-item {
+    width: calc(50% - 5px);
+    height: 225px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.abut-us-advantages-item.item_1 {
+    height: 460px;
+    text-align: center;
+    padding: 110px 73px;
+}
+
+.abut-us-advantages-right .abut-us-advantages-item:nth-child(even) {
+    margin-right: 0;
+}
+
+.advantages-item-header {
+    margin-bottom: 25px;
+}
+
+.advantages-item-header {
+    margin-bottom: 25px;
+    color: #000;
+    font-family: "KharkivTone";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.1px;
+}
+
+.advantages-item-text {
+    color: #292929;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+
+.item_1 .advantages-item-text {
+    font-size: 20px;
+}
+
+.item_1 .advantages-item-header {
+    font-size: 110px;
+}
+
+section.section-block-button {
+    padding: 110px 0;
+    text-align: center;
+}
+
+.block-button-text-1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.6px;
+    margin-bottom: 60px;
+}
+
+.block-button-text-2 {
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Igra Sans";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    font-variant: small-caps;
+    letter-spacing: -2.4px;
+    margin-bottom: 50px;
+}
+
+.block-button-text-3-before, .form-text-2-before {
+    margin: 0 auto;
+    width: 2px;
+    height: 38px;
+    content: '';
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.block-button-text-3-after, .form-text-2-after {
+    transform: rotate(180deg);
+    margin: 0 auto;
+    width: 2px;
+    height: 38px;
+    content: '';
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.block-button-text-3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.block-button-button {
+    margin-top: 70px;
+}
+
+.block-button-button .button {
+    padding: 22px;
+    margin: 0 auto;
+}
+
+section.section-reviews {background: radial-gradient(345.65% 82.09% at 23.26% 24.33%, #EAEDF3 0%, #E2E8F3 100%);padding: 110px 0;}
+
+.reviews-tab-titles {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.tab-title {
+    color: #7D7D7D;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+}
+.tab-title.active {
+    color: #000;
+    cursor: default;
+}
+.tab-sep{
+    color: #003FA5;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    margin: 0 20px;
+}
+
+.tab-body {
+    display: none;
+}
+
+.tab-body.active {
+    display: block;
+}
+.reviews-carousel-item, .advantages-carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 310px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+}
+.carousel-item-top {
+    display: flex;
+    justify-content: space-between;
+    color: #7D7D7D;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.15px;
+    margin-bottom: 85px;
+}
+.carousel-item-top-icon img {
+    width: 20px;
+}
+.carousel-item-bottom {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+}
+.blog-item-image {
+    display: block;
+    width: 100%;
+    height: 288px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.owl-carousel {
+    transition: .5s;
+}
+.blog-item {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+.blog-item-date {
+    color: #515151;);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.blog-item-name {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.45px;
+}
+
+.blog-items {
+    margin-bottom: 50px;
+}
+
+.blog-all-items a {
+    text-decoration: none;
+    color: #003FA5;
+    font-family: "Igra Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.45px;
+}
+
+section.section-blog {
+    padding: 110px 0;
+}
+
+section.section-partners {
+    padding: 110px 0;
+    background: radial-gradient(313.98% 145.12% at 27.4% 25.6%, #9B9B9B 0%, #353535 100%);););););
+    color: #fff;
+}
+.wpcf7-response-output {
+    margin-bottom: 0 !important;
+}
+.partners-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    overflow: hidden;
+    height: 230px;
+    transition: .3s;
+}
+.partners-items.opened{
+    height: auto;
+}
+.partners-item {
+    width: calc(25% - 10px);
+    height: 220px;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: center;
+    font-family: "Igra Sans";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.35px;
+    padding: 40px;
+}
+
+.partners-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.partners-item:last-child {
+    width: calc(50% - 10px);
+    margin-right: 0;
+}
+
+.partners-show {
+    margin: 0 auto;
+    padding: 12px 33px;
+    width: 180px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Igra Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+
+}
+
+section.section-form {
+    padding: 110px 0;
+}
+
+.section-title.form-text-1 {
+    color: #000;
+    font-family: "Igra Sans";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.55px;
+    text-align: center;
+}
+
+.form-text-2 {
+    color: #000;
+    font-family: "Igra Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section-form .form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+form.wpcf7-form {
+    max-width: 942px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-col-2 {
+    width: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.wpcf7-form-control:not(.wpcf7-submit) {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    background: #FFF;
+    padding: 25px;
+    color: #515151;);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.48px;
+    width: 100%;
+}
+
+.form-col-2:nth-child(even) {
+    margin-right: 0;
+}
+
+.form-col-1 {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.wpcf7-form-control-wrap {
+    width: 100%;
+}
+
+span.wpcf7-form-control.wpcf7-acceptance.optional {
+    border: none;
+    display: block;
+    padding: 25px 0;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+    margin: 0 auto;
+    width: 320px;
+    padding: 22px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+section.section-main-map {
+    background: #E9ECF2;
+    padding: 110px 0 0;
+    position: relative;
+}
+
+.map {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 2;
+}
+
+.main-map-info {
+    position: relative;
+    height: 500px;
+    width: 320px;
+    background: #fff;
+    padding: 62px 42px;
+    text-align: center;
+    font-size: 18px;
+    z-index: 3;
+}
+.main-map-info a{
+	text-decoration: none;
+	color: inherit;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 131%;
+}
+.map-info-title {
+    color: #000;
+    font-family: "Igra Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 50px;
+}
+
+.map-info-address {
+    margin-bottom: 20px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 150%;
+}
+
+.map-info-button .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 17.719px;
+    font-style: normal;
+
+}
+
+.map-info-phone {
+    margin-bottom: 10px;
+}
+
+.map-info-mail {
+    margin-bottom: 30px;
+}
+
+.map-info-social {
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.social-link {
+    margin: 0 20px;
+}
+
+.section-title.main-map-title {
+    color: #000;
+    font-family: "Igra Sans";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.55px;
+    text-align: center;
+}
+
+footer#footer {
+    background: #132337;
+    padding: 100px 0;
+    color: #fff;
+}
+
+footer#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-row > div {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.footer-row {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+[class^="footer-menu"] ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-col-title, .footer-col-title a {
+    color: #FFF;
+    font-family: "Igra Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.54px;
+    margin-bottom: 20px;
+}
+
+.footer-row > div:last-child {
+    margin-right: 0;
+}
+
+.footer-row:nth-child(2) .footer-col-title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid;
+}
+
+.footer-social .social-link {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.footer-col-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom {
+    border-top: 1px solid;
+    margin-top: 20px;
+    padding-top: 50px;
+    display: flex;
+    color: #E1E1E1;
+    font-family: "Igra Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.48px;
+}
+
+.footer-bottom>div {
+}
+
+.footer-bottom-left {
+    width: 60%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom-right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer#footer .footer-bottom a {
+    text-decoration: underline;
+}
+
+.footer-col-content img {
+    max-width: 16px;
+}
+
+.footer-col-content>* {
+    margin-bottom: 15px;
+}
+
+.header-menu ul li {
+    margin-right: 30px;
+}
+
+.wpcf7-acceptance .wpcf7-list-item {
+    margin: 0;
+}
+.wpcf7-spinner {
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+}
+/* Общие стили для popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    display: none; /* Скрываем по умолчанию */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Чтобы popup был поверх всего */
+
+
+}
+
+.popup.active {
+    display: flex; /* Делаем видимым */
+}
+.popup.active .popup-content {
+    opacity: 1; /* Полностью видимым */
+}
+
+/* Стили для контента popup */
+.popup-content {
+    background-color: #fff;
+    padding: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    max-width: 1300px;
+    /*max-width: 90%;*/
+    max-height: 80%;
+    width: 100%;
+    overflow: auto; /* Если контент не помещается */
+    opacity: 0; /* Начальная прозрачность */
+    transition: opacity 1s ease; /* Плавная анимация прозрачности */
+}
+
+/* Стили для кнопки закрытия */
+.close-popup-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+    border: none;
+    background: none;
+    padding: 0;
+    z-index: 3;
+}
+
+.close-popup-btn:hover {
+    color: #555;
+}
+
+.popup-form-success {
+    display: none;
+    background: radial-gradient(75.64% 63.31% at 52.92% 52.74%, #BCD9FB 0%, #FFF 100%););
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+}
+.popup-form-success.active {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.popup-form-success-title {
+    color: #000;
+    font-family: "Igra Sans";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.65px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.popup-form-success-body {
+    color: #000;
+    text-align: center;
+    font-family: "Igra Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.3px;
+}
+.owl-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.btn-arr-left, .btn-arr-right {
+    display: block;
+    border-radius: 43px;
+    background: #FFF;
+    width: 43px;
+    height: 43px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/wp-content/themes/dominant/assets/images/icons/arrow_right_gray.svg');
+}
+
+.btn-arr-left {
+    transform: rotate(180deg);
+}
+.disabled .btn-arr-left, .disabled .btn-arr-right {
+    opacity: .5;
+}
+button.owl-prev {
+    margin-right: 8px;
+}
+.owl-carousel .owl-nav button.disabled {
+    cursor: default;
+}
+
+
+
+section.section-single-top {
+    padding: 50px 0 110px;
+    background: radial-gradient(44.57% 45.75% at 45.73% 49.89%, #BCD9FB 5.26%, #FFF 100%););
+}
+
+#breadcrumbs {
+    margin-bottom: 40px;
+}
+
+.single-top-announce {
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    padding-top: 20px;
+    width: 60%;
+    margin-left: 30%;
+}
+
+section.section-service-accordions {
+    background: #353535;
+    padding: 110px 0;
+    color: #fff;
+}
+.service-accordions-before, .service-accordions, .service-accordions-after {
+    margin-bottom: 70px;
+    margin-left: 30%;
+    width: 60%;
+}
+
+.service-accordions {
+    border-top: 1px solid;
+}
+
+.accordion-item {
+    padding: 40px 0;
+    border-bottom: 1px solid;
+    position: relative;
+}
+
+.accordion-title {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.accordion-title>div {
+    width: 90%;
+}
+
+.accordion-body {
+    padding-top: 20px;
+    display: none;
+}
+
+.accordion-item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin: auto;
+    width: 27px;
+    height: 27px;
+    transition: .3s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/wp-content/themes/dominant/assets/images/icons/circle_plus_white.svg');
+}
+
+.accordion-item.opened:after {
+    transform: rotate(45deg);
+}
+.white-text-blue {
+    color: #003FA5;
+    font-family: "Igra Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.22px;
+    margin-bottom: 50px;
+}
+.white-text-black {
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.22px;
+}
+section.section-black-text {
+    background: radial-gradient(227.38% 134.76% at 14.74% 11.79%, #9B9B9B 0%, #6F6F6F 28.52%, #353535 100%);
+    color: #fff;
+}
+.black-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.22px;
+    margin-left: 30%;
+}
+
+
+section.section-about-white {
+    background: radial-gradient(48.11% 43.68% at 4.17% 6.43%, #BCD9FB 0%, #FFF 100%);
+}
+
+.about-white-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.22px;
+    margin-left: 30%;
+}
+
+.about-white-text {}
+
+section.section-about-dark {
+    background: radial-gradient(313.98% 145.12% at 27.4% 25.6%, #9B9B9B 0%, #353535 100%););
+    color: #fff;
+}
+
+.about-dark-text {color: #FFF;font-family: Inter;font-size: 22px;font-style: normal;font-weight: 400;line-height: 100%;letter-spacing: -0.22px;}
+
+section.section-about-advantages {
+    background: #E3E8F4;
+}
+
+.about-advantages-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-advantages-item-icon {
+    margin-bottom: 20px;
+    max-width: 150px;
+}
+
+.about-advantages-item-text {
+    color: #000;
+    text-align: center;
+    font-family: "Igra Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.15px;
+}
+
+.about-advantages-item-icon img {
+    width: 100%;
+}
+
+
+section.section-contacts-body {
+    background: radial-gradient(116.07% 95.56% at 13.18% 35.55%, #BCD9FB 0%, #FFF 100%););
+    padding-top: 50px;
+}
+
+.section-title.contacts-title {
+    margin-bottom: 50px;
+}
+
+.contacts-info {
+    background: #fff;
+    padding: 30px 30px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contacts-info-title {
+    color: #000;
+    font-family: "Igra Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.contacts-info-item div:first-child {
+    color: #003FA5;
+    text-align: center;
+    font-family: "Igra Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.54px;
+    margin-bottom: 10px;
+}
+
+.contacts-info-item {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.45px;
+    margin-bottom: 30px;
+}
+
+.contacts-info a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contacts-map {
+    border-radius: 5px;
+	height: 100%;
+}
+
+.contacts-map iframe {
+    width: 100%;
+    height: 100%;
+}
+.mobile{
+    display: none;
+}
+
+
+.auction-item {
+    padding: 40px 30px 20px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 70px;
+}
+.auction-item-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.auction-item-name {
+    color: #003FA5;
+    font-family: "Igra Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.22px;
+    margin-bottom: 20px;
+}
+
+.auction-item-label {
+    color: #7D7D7D;);
+    font-family: "Igra Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.14px;
+    margin-bottom: 10px;
+}
+.auction-item-status {
+    display: flex;
+    align-items: center;
+}
+.auction-item-value.ready {
+    color: #038000;
+}
+.auction-item-value.wait {
+    color: #000;
+}
+.auction-item-top {
+    padding-bottom: 20px;
+}
+.auction-item-body {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    display: flex;
+}
+.auction-item-bottom {
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.auction-item-image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-right: 20px;
+    height: 230px;
+    width: 25%;
+}
+.auction-item-description {
+    width: 75%;
+}
+.auction-item-price {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.auction-item-endorder {
+    width: 25%;
+}
+
+.auction-item-region {
+    width: 25%;
+}
+.auction-item-link {
+    width: 25%;
+    text-align: right;
+}
+.auction-item-bottom .auction-item-value {
+    color: #003FA5;
+    font-family: "Igra Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.18px;
+}
+.auction-item-link a {
+    border-radius: 50px;
+    background: #003FA5;
+    text-decoration: none;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Igra Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    padding: 14px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.auction-item-top .auction-item-label {
+    margin-bottom: 0;
+}
+.requisits-item {
+    display: flex;
+    padding: 30px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #003fa5;
+    text-align: left;
+    border-bottom: 1px solid #c1c1c1;
+}
+.requisits-item .label, .requisits-item .value {
+    width: 50%;
+}
+.requisits {
+    border-top: 1px solid #c1c1c1;
+}
+
+
+.employe-post {
+    display: block;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #7d7d7d;
+    margin-bottom: 5px;
+}
+.employees-listing {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-left: 25%;
+}
+.employees-listing-item {
+    width: 50%;
+    padding-right: 45px;
+    padding-bottom: 85px;
+}
+.employees-listing-item a {
+    display: block;
+    color: #003FA5;
+    font-family: "Igra Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.25px;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+section.section-employees {
+    background: radial-gradient(48.11% 43.68% at 4.17% 6.43%, #BCD9FB 0%, #FFF 100%);
+}
+.employees-listing-item:nth-child(even) {
+    padding-right: 0;
+}
+
+.vacancy-listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.vacancy-listing-item {display: flex;flex-wrap: wrap;width: calc(25% - 10px);height: 220px;border: 1px solid #7d7d7d;border-radius: 5px;align-items: center;justify-content: center;text-decoration: none;}
+
+.vacancy-listing-item span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.vacancy-listing-item-inner span {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #7d7d7d;
+}
+.vacancy-listing-item-inner .vacancy-name {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+
+
+section.section-vacancy {
+    padding-top: 50px;
+    background: radial-gradient(48.11% 43.68% at 4.17% 6.43%, #BCD9FB 0%, #FFF 100%);
+}
+
+.vacancy-text {
+    margin-bottom: 50px;
+}
+
+.contacts-phones {
+    position: relative;
+}
+.contacts-phones-full {
+    display: none;
+    position: absolute;
+    margin-left: 0 !important;
+    padding: 10px;
+    right: 0;
+    top: -10px;
+    background: #fff;
+    z-index: 99;
+    min-width: 160px;
+    text-align: right;
+    transition: .5s;
+    border-radius: 5px;
+    box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.4);
+}
+.contacts-phones:hover .contacts-phones-full {
+    display: block;
+}
+.contacts-phones-full a {
+    color: #000;
+    display: block;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.myfixedHeader .contacts-phones-full a {
+    color: #000 !important;
+}
+.contacts-phones-full a:last-child {
+    border: navajowhite;
+}
+
+
+section.section-vacancy-body {
+    background: radial-gradient(48.11% 43.68% at 4.17% 6.43%, #BCD9FB 0%, #FFF 100%);
+}
+.vacancy-text-header {
+    font-family: "Igra Sans";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #003fa5;
+    margin-bottom: 20px;
+}
+.vacancy-text-body {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #000;
+}
+.vacancy-text-body li {
+    margin-bottom: 10px;
+}
+.vacancy-text-block {
+    margin-bottom: 70px;
+}
+.vacancy-work-conditions-title {
+    font-family: "Igra Sans";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #003fa5;
+    margin-bottom: 50px;
+}
