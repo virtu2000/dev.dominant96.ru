@@ -86,6 +86,7 @@ $blog_items = get_posts( array(
                         <div class="services-listing">
                             <?php foreach($services_tree as $item):?>
                             <div class="services-listing-category">
+                                <div class="services-listing-category-img"><?=$item['term']->description?></div>
                                 <span><?=$item['term']->name?></span>
                                 <?/*<a href="<?=get_category_link($item['term']->term_id)?>"><?=$item['term']->name?></a>*/?>
                                 <div class="services-listing-posts">
@@ -105,8 +106,8 @@ $blog_items = get_posts( array(
                 <div class="row">
                     <div class="col">
                         <div class="row">
-                        <div class="section-title about-us-title"><?=$about['header'] ?></div>
-                        <div class="about-us-text"><?=$about['text'] ?></div>
+                        <div class="col section-title about-us-title"><?=$about['header'] ?></div>
+                        <div class="col about-us-text"><?=$about['text'] ?></div>
                                     </div>
                         <div class="abut-us-advantages">
                             <?php $i = 1;
@@ -136,94 +137,8 @@ $blog_items = get_posts( array(
         </section>
 
 
-        <section class="section-reviews">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="section-title reviews-title">Почему мы</div>
-                        <div class="reviews-tabs">
-                            <div class="reviews-tab-titles">
-                                <div class="tab-title active" data-tab="1">Отзывы</div>
-                                <div class="tab-sep"> / </div>
-                                <div class="tab-title" data-tab="2">Достижения</div>
-                            </div>
-                            <div class="reviews-tab-contents">
-                                <div class="tab-body active" data-tab="1">
-                                    <div class="owl-carousel reviews-carousel" >
-                                        <?php foreach ($reviews as $item): ?>
-                                        <div class="reviews-carousel-item">
-                                            <div class="carousel-item-top">
-                                                <div class="carousel-item-top-icon"><img src="<?=get_template_directory_uri() . '/assets/images/icons/user_gray.svg'?>"></div>
-                                                <div class="carousel-item-top-title"><?=$item['author']?></div>
-                                            </div>
-                                            <div class="carousel-item-bottom"><?=$item['text']?></div>
-                                        </div>
-                                        <?php endforeach; ?>
-                                    </div>
-                                </div>
-                                <div class="tab-body" data-tab="2">
-                                    <div class="owl-carousel advantages-carousel" >
-                                        <?php foreach ($advantages as $item): ?>
-                                            <div class="advantages-carousel-item">
-                                                <div class="carousel-item-top">
-                                                    <div class="carousel-item-top-icon"><img src="<?=get_template_directory_uri() . '/assets/images/icons/user_gray.svg'?>"></div>
-                                                    <div class="carousel-item-top-title"><?=$item['reward']?></div>
-                                                </div>
-                                                <div class="carousel-item-bottom"><?=$item['text']?></div>
-                                            </div>
-                                        <?php endforeach; ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="section-title blog-title">Блог</div>
-                        <div class="blog-items owl-carousel">
-<!--                            <div>-->
-                                <?php foreach ($blog_items as $item): ?>
-                                    <a class="blog-item" href="<?=get_the_permalink($item->ID)?>">
-                                        <span class="blog-item-image" style="background-image: url('<?=get_the_post_thumbnail_url($item->ID, 'large')?>')"></span>
-                                        <span class="blog-item-date"><?=get_the_date('j F Y', $item->ID);?></span>
-                                        <span class="blog-item-name"><?=$item->post_title?></span>
-                                    </a>
-                                <?php endforeach; ?>
-<!--                            </div>-->
-                        </div>
-                        <div class="blog-all-items">
-                            <a href="#">Все статьи</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-partners">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="section-title partners-title"><?=$partners['title']?></div>
-                        <div class="partners">
-                            <div class="partners-items">
-                                <?php foreach ($partners['items'] as $item): ?>
-                                    <div class="partners-item">
-                                        <?=$item['title'] ?>
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
-                            <div class="partners-show button button-white">Показать еще</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
+    
 <?php if($form_block['form']): ?>
         <section class="section-form">
             <div class="container">
@@ -239,37 +154,7 @@ $blog_items = get_posts( array(
             </div>
         </section>
 <?php endif; ?>
-        <section class="section-main-map">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="section-title main-map-title">Где мы находимся</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="main-map-info">
-                            <div class="map-info-title"><?=$org_name?></div>
-                            <div class="map-info-address"><?=$address['postal_code'] .', '. $address['city'] .', '. $address['addr'] ?></div>
-                            <div class="map-info-phone"><a href="tel:<?=clear_phone($phone) ?>"><?=$phone ?></a></div>
-                            <div class="map-info-mail"><a href="mailto:<?=$email ?>"><?=$email ?></a></div>
-                            <div class="map-info-social">
-                                <?php if($social['vk']): ?><a class="social-link" href="<?=$social['vk']?>"><img src="<?=get_template_directory_uri() . '/assets/images/icons/vk_black.svg'?>" alt="VK"></a><?php endif; ?>
-                                <?php if($social['wa']): ?><a class="social-link" href="<?=$social['wa']?>"><img src="<?=get_template_directory_uri() . '/assets/images/icons/wa_black.svg'?>" alt="WhatsApp"></a><?php endif; ?>
-                                <?php if($social['tg']): ?><a class="social-link" href="<?=$social['tg']?>"><img src="<?=get_template_directory_uri() . '/assets/images/icons/tg_black.svg'?>" alt="Telegram"></a><?php endif; ?>
-                            </div>
-                            <div class="map-info-button">
-<!--                                <a class="button button-white" href="#">Обратиться в компанию</a>-->
-                                <button class="button button-white open-popup-btn" data-popup-id="consult">Обратиться в компанию</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="map">
-                <?=$map?>
-            </div>
-        </section>
+      
         <?php
         while ( have_posts() ) :
             the_post();

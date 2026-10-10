@@ -138,65 +138,58 @@ $blog_items = get_posts( array(
                 <div class="col">
                     <div class="footer-row">
                         <div class="footer-logo">
-                            <?php if(is_front_page()): ?>
-                                <div><img src="<?=$logo?>" alt=""></div>
-                            <?php else: ?>
-                                <a href="" title=""><img src="<?=$logo?>" alt=""></a>
-                            <?php endif; ?>
+                      <div class="row">
+                        <div class="col">
+                               <div> <img src="<?=$logo?>" alt=""></div>
+                                <div><?=get_the_privacy_policy_link()?></div>
+                            
+                                <button class="button button-white open-popup-btn" data-popup-id="recall">Отправить заявку</button>
+                        </div> 
                         </div>
+                    </div>
+                        <div class="footer-row">
                         <div class="footer-addr">
-                            <div class="footer-col-title">
-                                Адрес
-                            </div>
+                            
                             <div class="footer-col-content">
                                 <div class="addr">
+                                    <img src="<?=get_template_directory_uri() . '/assets/images/icons/geo.svg'?>" alt="Адрес"/>
                                     <?=$address['postal_code'] .', '. $address['city'] .', '. $address['addr'] ?>
                                 </div>
-                                <div class="worktime">
-                                    <img src="<?=get_template_directory_uri() . '/assets/images/icons/time_white.svg'?>" alt="Время работы"/>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="worktime">
+                                    <img src="<?=get_template_directory_uri() . '/assets/images/icons/time_black.svg'?>" alt="Время работы"/>
                                     <?=$work_time?>
                                 </div>
-                            </div>
-                        </div>
+
                         <div class="footer-phone">
-                            <div class="footer-col-title">
-                                Телефон
-                            </div>
+                            
                             <div class="footer-col-content">
                                 <? foreach($phones as $phone): ?>
                                 <div class="phone">
-                                    <img src="<?=get_template_directory_uri() . '/assets/images/icons/phone_white.svg'?>" alt="Телефон">
+                                    <img src="<?=get_template_directory_uri() . '/assets/images/icons/phone_black.svg'?>" alt="Телефон">
                                     <a href="tel:<?=clear_phone($phone['phone']) ?>"><?=$phone['phone'] ?></a>
                                 </div>
                                 <? endforeach; ?>
                             </div>
                         </div>
                         <div class="footer-email">
-                            <div class="footer-col-title">
-                                Почта
-                            </div>
+                            
                             <div class="footer-col-content">
                                 <div class="email">
-                                    <img src="<?=get_template_directory_uri() . '/assets/images/icons/mail_white.svg'?>" alt="E-mail">
+                                    <img src="<?=get_template_directory_uri() . '/assets/images/icons/mail_black.svg'?>" alt="E-mail">
                                     <a href="mailto:<?=$email ?>"><?=$email ?></a>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="footer-social">
-                            <div class="footer-col-title">
-                                Социальные сети
-                            </div>
-                            <div class="footer-col-content">
-                                <?php if($social['vk']): ?><a class="social-link" href="<?=$social['vk']?>">Вконтакте</a><?php endif; ?>
-                                <?php if($social['wa']): ?><a class="social-link" href="<?=$social['wa']?>">WhatsApp</a><?php endif; ?>
-                                <?php if($social['tg']): ?><a class="social-link" href="<?=$social['tg']?>">Telegram</a><?php endif; ?>
-                            </div>
-                        </div>
+                     
                     </div>
                     <div class="footer-row">
-                        <div class="footer-menu-0">
-                        </div>
+           
                         <div class="footer-menu-1">
                             <div class="footer-col-title">
                                 Компания
@@ -260,19 +253,7 @@ $blog_items = get_posts( array(
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="footer-bottom">
-                        <div class="footer-bottom-left">
-                            <div><?=$copyright?></div>
-                            <div><?=get_the_privacy_policy_link()?></div>
-                        </div>
-                        <div class="footer-bottom-right">
-                            <div>Created by <a href="https://promoexpert.pro/" target="_blank">Promoexpert</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+       
         </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

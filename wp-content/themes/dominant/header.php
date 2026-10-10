@@ -101,7 +101,7 @@ $services_tree = get_taxonomy_tree('services', 'service');
                             </div>
                             <div class="header-top-buttons">
 <!--                                <a class="button button-white" href="#">Обратный звонок</a>-->
-                                <button class="button button-white open-popup-btn" data-popup-id="recall">Обратный звонок</button>
+                                <button class="button button-white open-popup-btn" data-popup-id="recall">Отправить заявку</button>
                             </div>
                         </div>
                     </div>
