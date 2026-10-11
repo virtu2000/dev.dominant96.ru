@@ -128,7 +128,7 @@ $services_tree = get_taxonomy_tree('services', 'service');
                     </div>
                     <div class="mobile-menu-toggler">
                         <div class="open-mobile-menu"><img src="<?= get_template_directory_uri() . '/assets/images/icons/hamb-b.svg' ?>" alt=""></div>
-                        <div class="close-mobile-menu"><img src="<?= get_template_directory_uri() . '/assets/images/icons/close_black.svg' ?>" alt=""></div>
+                        <div class="close-mobile-menu"><img src="<?= get_template_directory_uri() . '/assets/images/icons/close2.svg' ?>" alt=""></div>
                     </div>
                 </div>
                 <div class="mobile-menu">

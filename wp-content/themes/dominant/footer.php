@@ -298,8 +298,9 @@ $blog_items = get_posts( array(
 
 <div class="popup" id="recall">
     <div class="popup-content">
-        <span class="close-popup-btn"><img src="<?=get_template_directory_uri() . '/assets/images/icons/close_black.svg'?>" alt="Закрыть"></span>
+        <span class="close-popup-btn"><img src="<?=get_template_directory_uri() . '/assets/images/icons/close2.svg'?>" alt="Закрыть"></span>
         <div class="popup-form">
+            <div class="popup-form-header">Оставить заявку</div>
             <div class="popup-form-wrapper"><?=do_shortcode('[contact-form-7 id="9724a77"]')?></div>
             <div class="popup-form-success">
                 <div class="popup-form-success-inner">
@@ -313,7 +314,7 @@ $blog_items = get_posts( array(
 
 <div class="popup" id="consult">
     <div class="popup-content">
-        <span class="close-popup-btn"><img src="<?=get_template_directory_uri() . '/assets/images/icons/close_black.svg'?>" alt="Закрыть"></span>
+        <span class="close-popup-btn"><img src="<?=get_template_directory_uri() . '/assets/images/icons/close2.svg'?>" alt="Закрыть"></span>
         <div class="popup-form">
 
             <div class="popup-form-wrapper"><?=do_shortcode('[contact-form-7 id="d3d7718"]')?></div>
