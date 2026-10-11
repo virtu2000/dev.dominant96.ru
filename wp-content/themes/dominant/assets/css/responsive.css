@@ -1,11 +1,62 @@
+@media (max-width: 1440px) {
+    section.section-main-banner {
+        padding: 115px 0;
+        background: #e8e8e87a;
+        height: 850px;
+    }
+
+    .main-banner-title {font-size: 52px;}
+
+}
 @media (max-width: 768px) {
+
+    .container {padding: 0 20px;}
+
+    .main-banner-bg-image {background-position: bottom;height: 900px;/* width: 200%; *//* zoom: normal; *//* background-size: cover; *//* top: 150px; *//* background-size: 150%; */background-image: url('https://dev.dominant96.ru/wp-content/uploads/2026/10/2ban.jpg');"";}
+    .section.section-main-banner {background: #fcfcfc;}
+    .main-banner-bg-image:before {
+    background: #000;
+    opacity: 0.01;
+    /* padding: 100px; */
+    }
+
+.services-listing-category>a, .services-listing-category>span {
+    font-size: 22px;
+}
+.services-listing-posts>a {
+    font-size: 16px;
+}   
+
+.footer-logo button {width: 100%;margin-top: 40px;padding: 0;margin-left: 0!important;!importanat;!importnat;!importna;!importn;!import;!impor;!impo;!imp;!im;!i;!;!importnat;!importnat;!importna;!importn;!import;!impor;!impo;!imp;!im;!i;!;}
+
+section.section-about-us {/* margin-top:auto; */padding: 0;}
+section.section-about-us .row {flex-direction: column;}
+.abut-us-advantages-item.item_1 {background-image: url(https://dev.dominant96.ru/wp-content/uploads/2026/10/vesa_m.png);padding: 32px!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;background-position: right top;background-position-y: 18px;}
+.item_1 .advantages-item-text {width: 80%;}
+.abut-us-advantages-right .item_2,
+.abut-us-advantages-right .item_3, 
+.abut-us-advantages-right .item_4,
+.abut-us-advantages-right .item_5
+{flex-direction: row;gap: 10px;}
+.advantages-item-text {flex:1;margin-left: 15px;}
+.advantages-item-text p {margin: auto;}
+.services-listing-category {    
+    padding-bottom: 40px;
+    padding-right: 0px;}
+
     .mobile{
         display: block;
     }
+    .mobile-logo img{width: 110px;}
     .header-top {
         display: none;
     }
-
+    .mobile-phone a {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 4px;
+    }
     .header-top-wrapper {
         display: none;
     }
@@ -16,16 +67,16 @@
 
     .mobile-menu {
         display: none;
-        background: radial-gradient(157.57% 122.61% at -50.97% 45.46%, #BCD9FB 5.26%, #FFF 100%);
+        background: #fff;
         color: #000;
-        padding: 15px;
+        padding: 25px;
         height: 100%;
         width: 100%;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 99;
-        padding-top: 160px;
+        padding-top: 80px;
     }
 
     .mobile-menu a {
@@ -44,8 +95,8 @@
     .mobile-header {
         display: flex;
         justify-content: space-between;
-        background: linear-gradient(90deg, #3D6DA0 -84.3%, #7B7B7B 100%);
-        padding: 15px;
+        background: #fff;
+        padding: 20px;
         align-items: flex-start;
         z-index: 100;
         position: fixed;
@@ -62,7 +113,7 @@
     }
 
     .mobile {
-        font-family: Inter;
+        /* font-family: Inter; */
         position: relative;
     }
 
@@ -145,7 +196,7 @@
     .opened .mobile-menu-toggler .close-mobile-menu{
         displaybl;
         display: block;
-        width: 24px;
+        width: 30px;
     }
 
     .close-mobile-menu {
@@ -172,16 +223,17 @@
         display: none;
     }
     .main-banner-title {
-        font-size: 30px;
+        font-size: 40px;
     }
     .main-banner-text {
         font-size: 14px;
     }
     section {
-        padding: 60px 0 !important;!i;!;
+        /* padding: 120px 0 400px !important; */!i;!;
     }
     .section-title {
-        font-size: 30px !important;!i;!;
+        font-size: 32px !important;!i;!;
+        margin-bottom: 40px;
     }
     .services-listing {
         width: 100%;
@@ -190,7 +242,7 @@
     }
     .services-listing-category {
         width: 100%;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
     .services-listing-posts {
         border: none;
@@ -199,14 +251,15 @@
     }
     .services-listing-category>a {margin-bottom: 20px;}
     body * {
-        font-size: 15px;
+        font-size: 14px;
+        /* width: 100%; */
     }
     .abut-us-advantages-item {
         width: 100%;
         padding: 40px 16px !important;!i;!;
         margin-bottom: 10px;
         height: auto !important;!i;!;
-        text-align: center;
+        /* text-align: center; */
     }
     .abut-us-advantages-left {
         width: 100%;
@@ -220,11 +273,14 @@
         flex-direction: column;
     }
     .advantages-item-header, .item_1 .advantages-item-header {
-        font-size: 55px;
+        font-size: 50px;
+        font-weight: 500;
+        margin: auto 0;
     }
     .abut-us-advantages-right .abut-us-advantages-item {
         width: 100%;
         margin-right: 0;
+        padding: 32px!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;!importnant;!importnant;!importnan;!importna;!importn;!import;!impor;!impo;!imp;!im;!i;!;!importnat;!importnat;!importna;!importn;!import;!impor;!impo;!imp;!im;!i;!;
     }
     .block-button-text-2 {
         font-size: 40px;
@@ -252,7 +308,7 @@
 		padding-bottom: 0 !important;!i;!;
 	}
     .footer-row > div {
-        width: 100%;
+        width: 100%!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;!importnat;!importnat;!importna;!importn;!import;!impor;!impo;!imp;!im;!i;!;
     }
     .footer-row {
         flex-direction: column;

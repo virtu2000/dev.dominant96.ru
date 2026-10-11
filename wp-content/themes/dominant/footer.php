@@ -142,8 +142,10 @@ $blog_items = get_posts( array(
                         <div class="col">
                                <div> <img src="<?=$logo?>" alt=""></div>
                                 <div><?=get_the_privacy_policy_link()?></div>
-                            
+                        </div>
+                        <div class="col">
                                 <button class="button button-white open-popup-btn" data-popup-id="recall">Отправить заявку</button>
+                        </div>
                         </div> 
                         </div>
                     </div>
@@ -152,8 +154,14 @@ $blog_items = get_posts( array(
                             
                             <div class="footer-col-content">
                                 <div class="addr">
+                                    <div class="row">
+                                    <div class="col-1">
                                     <img src="<?=get_template_directory_uri() . '/assets/images/icons/geo.svg'?>" alt="Адрес"/>
+                                    </div>
+                                    <div class="col-11 col-md-7">
                                     <?=$address['postal_code'] .', '. $address['city'] .', '. $address['addr'] ?>
+                                    </div>
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -161,17 +169,31 @@ $blog_items = get_posts( array(
                         </div>
 
                         <div class="worktime">
+                        <div class="footer-col-content">
+                                  <div class="row">
+                                    <div class="col-1">
                                     <img src="<?=get_template_directory_uri() . '/assets/images/icons/time_black.svg'?>" alt="Время работы"/>
+                                    </div>
+                                    <div class="col-11 col-md-7">
                                     <?=$work_time?>
-                                </div>
+                            </div>            
+                            </div>
+                            </div>
+                        </div>
 
                         <div class="footer-phone">
                             
                             <div class="footer-col-content">
-                                <? foreach($phones as $phone): ?>
-                                <div class="phone">
+                                <div class="row">
+                                    <div class="col-1">
                                     <img src="<?=get_template_directory_uri() . '/assets/images/icons/phone_black.svg'?>" alt="Телефон">
+                                    </div>
+                                    <div class="col">
+                                    <? foreach($phones as $phone): ?>
+                                    <div class="phone">
                                     <a href="tel:<?=clear_phone($phone['phone']) ?>"><?=$phone['phone'] ?></a>
+                                    </div>
+                                    </div>
                                 </div>
                                 <? endforeach; ?>
                             </div>
@@ -190,21 +212,23 @@ $blog_items = get_posts( array(
                     </div>
                     <div class="footer-row">
            
-                        <div class="footer-menu-1">
+
+                    <div class="footer-menu-1">
                             <div class="footer-col-title">
-                                Компания
+                                Взыскание задолженностей
                             </div>
                             <div class="footer-col-content">
                                 <?php
                                 wp_nav_menu(
                                     array(
-                                        'theme_location' => 'footer1',
-                                        'menu_id'        => 'footer1-menu',
+                                        'theme_location' => 'footer3',
+                                        'menu_id'        => 'footer3-menu',
                                     )
                                 );
                                 ?>
                             </div>
                         </div>
+
                         <div class="footer-menu-2">
                             <div class="footer-col-title">
                                 Банкротство
@@ -220,22 +244,21 @@ $blog_items = get_posts( array(
                                 ?>
                             </div>
                         </div>
+                        
                         <div class="footer-menu-3">
-                            <div class="footer-col-title">
-                                Взыскание задолженностей
+                             <div class="footer-col-title">
+                                Услуги в сфере недвижимости
                             </div>
                             <div class="footer-col-content">
                                 <?php
                                 wp_nav_menu(
                                     array(
-                                        'theme_location' => 'footer3',
-                                        'menu_id'        => 'footer3-menu',
+                                        'theme_location' => 'footer5',
+                                        'menu_id'        => 'footer5-menu',
                                     )
                                 );
                                 ?>
                             </div>
-                        </div>
-                        <div class="footer-menu-4">
                             <div class="footer-col-title">
                                 Разрешение споров
                             </div>
@@ -245,6 +268,21 @@ $blog_items = get_posts( array(
                                     array(
                                         'theme_location' => 'footer4',
                                         'menu_id'        => 'footer4-menu',
+                                    )
+                                );
+                                ?>
+                            </div>
+                        </div>
+                        <div class="footer-menu-4">
+                            <div class="footer-col-title">
+                                Компания
+                            </div>
+                            <div class="footer-col-content">
+                                <?php
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location' => 'footer1',
+                                        'menu_id'        => 'footer1-menu',
                                     )
                                 );
                                 ?>

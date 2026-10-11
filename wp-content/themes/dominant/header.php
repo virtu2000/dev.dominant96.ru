@@ -112,10 +112,7 @@ $services_tree = get_taxonomy_tree('services', 'service');
 
             <div class="mobile">
                 <div class="mobile-header">
-                    <div class="mobile-menu-toggler">
-                        <div class="open-mobile-menu"><img src="<?= get_template_directory_uri() . '/assets/images/icons/hamb.svg' ?>" alt=""></div>
-                        <div class="close-mobile-menu"><img src="<?= get_template_directory_uri() . '/assets/images/icons/close_black.svg' ?>" alt=""></div>
-                    </div>
+                    
                     <div class="mobile-logo">
                         <?php if(is_front_page()): ?>
                             <div class="logo"><img src="<?=$logo?>" alt=""></div>
@@ -125,13 +122,13 @@ $services_tree = get_taxonomy_tree('services', 'service');
                             <a class="logo-inverse" href="/" title=""><img src="<?=$logo_inverse?>" alt=""></a>
                         <?php endif; ?>
                     </div>
-                    <div class="mobile-search-toggler">
-                            <div class="open-search">
-                                <img src="<?= get_template_directory_uri() . '/assets/images/icons/search_white.svg' ?>" alt="search open">
-                            </div>
-                            <div class="close-search">
-                                <img src="<?= get_template_directory_uri() . '/assets/images/icons/close_black.svg' ?>" alt="search close">
-                            </div>
+                    <div class="mobile-phone">
+                        <a href="tel:<?=clear_phone($phones[0]['phone']) ?>"><?=$phones[0]['phone'] ?></a>  
+
+                    </div>
+                    <div class="mobile-menu-toggler">
+                        <div class="open-mobile-menu"><img src="<?= get_template_directory_uri() . '/assets/images/icons/hamb-b.svg' ?>" alt=""></div>
+                        <div class="close-mobile-menu"><img src="<?= get_template_directory_uri() . '/assets/images/icons/close_black.svg' ?>" alt=""></div>
                     </div>
                 </div>
                 <div class="mobile-menu">

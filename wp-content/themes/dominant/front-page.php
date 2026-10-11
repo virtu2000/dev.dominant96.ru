@@ -72,7 +72,7 @@ $blog_items = get_posts( array(
                                 </div>
                             </div>
                             <div class="main-banner-image" ><?php if($main_banner['image']): ?><img src="<?= $main_banner['image'] ?>" alt="<?=$main_banner['header']?>"><?php endif; ?></div>
-                            <div class="main-banner-bg <?=( $main_banner['bg_image'] ? 'main-banner-bg-image' : '') ?>" <?=( $main_banner['bg_image'] ? 'style="background-image: url(\''.$main_banner['bg_image'].'\')"' : '') ?>></div>
+                            <div class="main-banner-bg <?=( $main_banner['bg_image'] ? 'main-banner-bg-image' : '') ?>"> </div>
                         </div>
                     </div>
                 </div>
