@@ -382,7 +382,7 @@ section.section-main-banner {
 }
 section.section-services {
     /* background: radial-gradient(48.11% 43.68% at 4.17% 6.43%, #BCD9FB 0%, #FFF 100%); */
-    padding: 110px 0 25px;
+    padding: 50px 0 25px;
 }
 
 .section-title {
@@ -891,18 +891,21 @@ form.wpcf7-form {
 }
 
 .wpcf7-form-control:not(.wpcf7-submit) {
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.40);
+    border-radius: 14px;
+    border: 0;
     background: #FFF;
-    padding: 25px;
-    color: #515151;);
+    padding: 16px 20px;
+    /* color: #A6ABB5; */);
     font-family: Onest;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -0.48px;
+    /* line-height: 100%; */
+    /* letter-spacing: -0.48px; */
     width: 100%;
+    background: #F7F7F7;
+    margin-bottom: 12px;
+    font-size: 14px;
 }
 
 .form-col-2:nth-child(even) {
@@ -923,14 +926,17 @@ span.wpcf7-form-control.wpcf7-acceptance.optional {
     border: none;
     display: block;
     padding: 25px 0;
+    background: unset;
+    padding: 20px 0 0 0;
 }
 
 .wpcf7-form-control.wpcf7-submit {
-    margin: 0 auto;
-    width: 320px;
-    padding: 22px;
+    margin: 20px 0 0;
+    /* width: 192px; */
+    padding: 16px 25px;
     font-size: 20px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    background: #417EEA;
 }
 
 section.section-main-map {
@@ -1166,17 +1172,18 @@ footer#footer .footer-bottom a {
 /* Стили для контента popup */
 .popup-content {
     background-color: #fff;
-    padding: 80px;
+    padding: 40px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
-    max-width: 1300px;
+    max-width: 600px;
     /*max-width: 90%;*/
-    max-height: 80%;
+    max-height: 450px;
     width: 100%;
     overflow: auto; /* Если контент не помещается */
     opacity: 0; /* Начальная прозрачность */
     transition: opacity 1s ease; /* Плавная анимация прозрачности */
+    border-radius: 12px;
 }
 
 /* Стили для кнопки закрытия */
@@ -1268,8 +1275,8 @@ button.owl-prev {
 
 
 section.section-single-top {
-    padding: 50px 0 110px;
-    background: radial-gradient(44.57% 45.75% at 45.73% 49.89%, #BCD9FB 5.26%, #FFF 100%););
+    padding: 30px 0 110px;
+    /* background: radial-gradient(44.57% 45.75% at 45.73% 49.89%, #BCD9FB 5.26%, #FFF 100%); */);
 }
 
 #breadcrumbs {
@@ -1743,6 +1750,9 @@ section.section-vacancy {
     padding-bottom: 3px;
     border-bottom: 1px solid #e7e7e7;
 }
+
+
+.popup-form-header {font-size: 32px;/* line-height: 100%; *//* letter-spacing: -0.01em; */color: #000;margin-bottom: 20px;text-align: center;font-weight: 500;}
 
 a:hover {color: #417EEA !important;}
 
