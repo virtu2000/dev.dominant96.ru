@@ -105,6 +105,7 @@ jQuery(document).ready(function ($){
     document.addEventListener( 'wpcf7submit', function( event ) {
     // document.addEventListener( 'wpcf7mailsent', function( event ) {
         jQuery('.wpcf7#' + event.detail.unitTag).closest('.popup-form').find('.popup-form-success').show();
+      
         document.getElementById(event.detail.unitTag).querySelector('form').reset();
 
     }, false );

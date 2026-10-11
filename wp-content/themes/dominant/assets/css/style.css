@@ -61,6 +61,8 @@ p{
     padding: 20px 0;
     /* background: linear-gradient(90deg, #3D6DA0 -84.3%, #7B7B7B 100%); */
     color: #000;
+    /* position: fixed; */
+    /* margin: auto; */
 }
 .breadcrumb a {
     text-decoration: none;
@@ -249,6 +251,7 @@ body {
     color: #000;
     text-decoration: none;
     transition: .6s;
+    text-transform: lowercase;
 }
 
 .header-menu {
@@ -392,7 +395,7 @@ section.section-services {
     font-weight: 400;
     line-height: 100%;
     /* letter-spacing: -0.55px; */
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 
@@ -1149,7 +1152,7 @@ footer#footer .footer-bottom a {
 /* Общие стили для popup */
 .popup {
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1158,8 +1161,6 @@ footer#footer .footer-bottom a {
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Чтобы popup был поверх всего */
-
-
 }
 
 .popup.active {
@@ -1174,7 +1175,7 @@ footer#footer .footer-bottom a {
     background-color: #fff;
     padding: 40px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
     position: relative;
     max-width: 600px;
     /*max-width: 90%;*/
@@ -1206,13 +1207,13 @@ footer#footer .footer-bottom a {
 
 .popup-form-success {
     display: none;
-    background: radial-gradient(75.64% 63.31% at 52.92% 52.74%, #BCD9FB 0%, #FFF 100%););
+    background: #fff;);
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    padding: 80px;
+    padding: 160px 80px;
 }
 .popup-form-success.active {
     display: flex;
@@ -1223,7 +1224,7 @@ footer#footer .footer-bottom a {
 .popup-form-success-title {
     color: #000;
     font-family: "Onest";
-    font-size: 65px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
@@ -1235,9 +1236,9 @@ footer#footer .footer-bottom a {
     color: #000;
     text-align: center;
     font-family: "Onest";
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 150%;
     letter-spacing: -0.3px;
 }
@@ -1758,6 +1759,9 @@ a:hover {color: #417EEA !important;}
 
 .myfixedHeader, .myfixedHeader a {
     color: #000 !important;
+}
+
+.myfixedHeader {transition: transform 0.1s, opacity 0.7s ease-in-out !important;
 }
 
 .myfixedHeader .contacts-phones-full a {
