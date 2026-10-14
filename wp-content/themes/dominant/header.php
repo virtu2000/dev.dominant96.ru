@@ -38,6 +38,7 @@ $services_tree = get_taxonomy_tree('services', 'service');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
 
+
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
@@ -49,6 +50,10 @@ $services_tree = get_taxonomy_tree('services', 'service');
 
     ym(110873922, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
 </script>
+
+<link rel="icon" href="<?= get_template_directory_uri() . '/assets/images/icons/favicon-light.png" media="(prefers-color-scheme: light)' ?> ">
+<link rel="icon" href="<?= get_template_directory_uri() . '/assets/images/icons/favicon-dark.png" media="(prefers-color-scheme: dark)' ?> ">
+
 <noscript><div><img src="https://mc.yandex.ru/watch/110873922" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
@@ -67,7 +72,7 @@ $services_tree = get_taxonomy_tree('services', 'service');
                     <div class="col">
                         <div class="header-top">
                             <div class="header-logo">
-                                <div class="logo"><img src="<?=$logo?>" alt=""></div>
+                                <div class="logo"><a href="/"><img src="<?=$logo?>" alt=""></a></div>
                             </div>
 							
 			                <div class="header-menu">

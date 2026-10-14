@@ -21,7 +21,9 @@ $services_tree = get_taxonomy_tree('services', 'service');
                     <div class="services-listing">
                         <?php foreach($services_tree as $item):?>
                             <div class="services-listing-category">
+                                <div class="services-listing-category-img"><?=$item['term']->description?></div>
                                 <span><?=$item['term']->name?></span>
+                                
                                 <? /*<a href="<?=get_category_link($item['term']->term_id)?>"><?=$item['term']->name?></a> */?>
                                 <div class="services-listing-posts">
                                     <?php foreach($item['posts'] as $item_child):?>

@@ -65,7 +65,7 @@ $blog_items = get_posts( array(
                                 <div class="main-banner-text"><?=$main_banner['text']?></div>
                                 <div class="main-banner-button">
                                     <?php if($main_banner['button']['popup']): ?>
-                                        <button class="button button-white open-popup-btn" data-popup-id="consult"><?=$main_banner['button']['text']?></button>
+                                        <button class="button button-white open-popup-btn" data-popup-id="recall"><?=$main_banner['button']['text']?></button>
                                     <?php else: ?>
                                         <a class="button button-white" href="<?=$main_banner['button']['link']?>"><?=$main_banner['button']['text']?></a>
                                     <?php endif; ?>
@@ -101,40 +101,9 @@ $blog_items = get_posts( array(
                 </div>
             </div>
         </section>
-        <section class="section-about-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="row">
-                        <div class="col section-title about-us-title"><?=$about['header'] ?></div>
-                        <div class="col about-us-text"><?=$about['text'] ?></div>
-                                    </div>
-                        <div class="abut-us-advantages">
-                            <?php $i = 1;
-                            ?>
-                            <div class="abut-us-advantages-left">
-                            <?php foreach ($about['elements'] as $item):  ?>
-                                <?php if ($i == 1):?>
-                                    <div class="abut-us-advantages-item item_<?=$i?>">
-                                        <div class="advantages-item-header"><?=$item['header']?></div>
-                                        <div class="advantages-item-text"><?=$item['text']?></div>
-                                    </div>
-                                </div>
-                                <div class="abut-us-advantages-right">
-                                <?php else:?>
-                                    <div class="abut-us-advantages-item item_<?=$i?>">
-                                        <div class="advantages-item-header"><?=$item['header']?></div>
-                                        <div class="advantages-item-text"><?=$item['text']?></div>
-                                    </div>
-                                <?php endif;?>
-                                <?php $i++;?>
-                            <?php endforeach;?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
+
+            <?php get_template_part( 'template-parts/about' ); ?>
 
 
        

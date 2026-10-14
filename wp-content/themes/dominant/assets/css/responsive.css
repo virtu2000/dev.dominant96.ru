@@ -27,7 +27,28 @@
 .services-listing-posts>a {
     font-size: 16px;
 }   
+section.section-single-top {padding: 80px 0 10px;}
+.single-top-announce h2{font-size: 22px;margin-bottom: 20px;}
+.wpcf7-form-control.wpcf7-submit {width: 100%;font-size:16px;}
 
+.single-service p{font-size: 16px;}
+
+.section-form-text {padding: 40px 20px;margin: 20px 0;border-radius: 12px;}
+.section-strateg-text .services-title {margin-bottom: 20px;font-size: 22px;}
+.services-text {font-size: 16px;}
+.section-strateg-text .col-fourth {
+    border-right: none;
+}
+
+.consult-form {padding: 30px;}
+.wpcf7-form {margin-top: 20px!important;}
+
+.single-parent-service .service-list a {font-size: 18px;margin-bottom: 20px;}
+
+.single-parent-service h1 {font-size: 35px;margin-bottom: 20px;}
+.single-parent-service .section-form-text {padding: 40px 20px;margin: 20px 0;border-radius: 12px;}
+.single-parent-service .section-form-text img {width: 100%;margin-bottom: 20px;}
+section.section-services {padding: 90px 0 25px;}
 
 .popup{ left:10px;}
 .footer-logo button {width: 100%;margin-top: 40px;padding: 0;margin-left: 0!important;!importanat;!importnat;!importna;!importn;!import;!impor;!impo;!imp;!im;!i;!;!importnat;!importnat;!importna;!importn;!import;!impor;!impo;!imp;!im;!i;!;}
@@ -356,7 +377,7 @@ section.section-about-us .row {flex-direction: column;}
         margin-left: 0;
     }
     h1 {
-        font-size: 30px;
+        font-size: 31px;
     }
     .auction-item-price {
         width: 100%;
