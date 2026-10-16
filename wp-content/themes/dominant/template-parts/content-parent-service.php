@@ -28,7 +28,10 @@ $backg = get_field('backg');
 
 
     <div class="container">
-        <section class="section-form-text">
+        
+     
+            
+        <section class="section-form-text" <? if ( ! empty($backg['url']) ) { ?> style="background-image: url('<?= $backg['url'] ?>'); background-repeat: no-repeat; background-position: right; background-size: 30%;" <? } ?>>
             <div class="row">
                 <div class="col-sm-6">
                     <div class="section-title service-title">
@@ -37,16 +40,7 @@ $backg = get_field('backg');
                     <?php the_content() ?>
                     <?= do_shortcode('[contact-form-7 id="fd26338"]') ?>
                 </div>
-   <div class="col-sm-2">
-</div>
-                <div class="col-sm-1">
-                        
-                    <? if ( ! empty($backg['url']) ) { ?>
-        
-      <img src="<?=$backg['url'] ?>"/>         
-            <? } ?>
 
-                <div>
             </div>
         </section>
     </div>
