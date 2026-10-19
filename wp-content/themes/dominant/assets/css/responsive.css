@@ -49,7 +49,7 @@ section.section-single-top {padding: 80px 0 10px;}
 .single-service p{font-size: 16px;}
 
 .section-form-text {padding: 40px 20px;margin: 20px 0;border-radius: 12px;}
-.section-strateg-text .services-title {margin-bottom: 20px;font-size: 22px;}
+.section-strateg-text .services-title {margin-bottom: 20px;font-size: 22px;width: 80vw;}
 .services-text {font-size: 16px;}
 .section-strateg-text .col-fourth {
     border-right: none;
@@ -61,7 +61,7 @@ section.section-single-top {padding: 80px 0 10px;}
 .single-parent-service .service-list a {font-size: 18px;margin-bottom: 20px;}
 
 .single-parent-service h1 {font-size: 40px;margin-bottom: 20px;}
-.single-parent-service .section-form-text {padding: 40px 20px;margin: 20px 0;border-radius: 12px;height: 800px;background-position: 100% 110%!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;background-size: 65%;}
+.single-parent-service .section-form-text {padding: 40px 20px;margin: 20px 0;border-radius: 12px;height: 800px;background-position: 100% 100%!important;background-size: 65%!important;}
 .single-parent-service .section-form-text img {width: 100%;margin-bottom: 20px;}
 section.section-services {padding: 90px 0 25px;}
 

@@ -106,9 +106,10 @@ $blog_items = get_posts( array(
                                     <div class="phone">
                                     <a href="tel:<?=clear_phone($phone['phone']) ?>"><?=$phone['phone'] ?></a>
                                     </div>
+                                        <? endforeach; ?>
                                     </div>
                                 </div>
-                                <? endforeach; ?>
+                            
                             </div>
                         </div>
                         <div class="footer-email">
