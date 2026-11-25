@@ -28,9 +28,14 @@
 
     .contact-pill-fill {min-width: 200px;width: 200px;}
     .main-banner-content {width: 70%;}
+
+ 
 }
 @media (max-width: 768px) {
 
+
+       .consult-form .contact-pill-outline {display:none;}
+       .consult-form .section-title.service-title {margin-bottom: 40px;}
 .footer-logo .contact-pill {min-width: 30%;width: 42%;}
     .contact-pill-outline {width: 100%!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;}
 .footer-logo .main-banner-contacts-title{margin: 40px 0 0px 0;width: 100%;}
@@ -82,13 +87,13 @@ section.section-single-top {padding: 80px 0 10px;}
     border-right: none;
 }
 
-.consult-form {padding: 30px;}
+.consult-form {padding: 30px;background-image: unset;}
 .wpcf7-form {margin-top: 20px!important;}
 
 .single-parent-service .service-list a {font-size: 18px;margin-bottom: 0;}
 
 .single-parent-service h1 {font-size: 40px;margin-bottom: 20px;}
-.single-parent-service .section-form-text {padding: 40px 20px;margin: 20px 0;border-radius: 12px;height: 830px;background-position: 100% 100%!important;background-size: 45%!important;}
+.single-parent-service .section-form-text {padding: 40px 20px;margin: 20px 0;border-radius: 12px;height: 730px;background-position: 90% 120%!important;background-size: 90%!important;}
 .single-parent-service .section-form-text img {/* width: 100%; *//* margin-bottom: 20px; */}
 section.section-services {padding: 90px 0 25px;}
 
@@ -296,6 +301,7 @@ section.section-about-us .row {flex-direction: column;}
     }
     .main-banner-contacts-title {
         font-size: 18px;
+        margin: 40px 0;
     }
     .contact-pill {
         height: 44px;
@@ -352,7 +358,7 @@ section.section-about-us .row {flex-direction: column;}
     .advantages-item-header, .item_1 .advantages-item-header {
         font-size: 50px;
         font-weight: 500;
-        margin: auto 0;
+        margin: 0 0 20px 0;
     }
     .abut-us-advantages-right .abut-us-advantages-item {
         width: 100%;
