@@ -5,6 +5,8 @@
 $announce    = get_field('announce');
 
 $backg = get_field('backg');
+$phones     = get_field('phones', 'options');
+$email      = get_field('email', 'options');
 
 
 
@@ -31,15 +33,16 @@ $backg = get_field('backg');
         
      
             
-        <section class="section-form-text" <? if ( ! empty($backg['url']) ) { ?> style="background-image: url('<?= $backg['url'] ?>'); background-repeat: no-repeat; background-position: right; background-size: 30%;" <? } ?>>
-            <div class="row">
-                <div class="col-sm-6">
+        <section class="section-form-text" <? if ( ! empty($backg['url']) ) { ?> style="background-image: url('<?= $backg['url'] ?>'); background-repeat: no-repeat; background-position: right; background-size: 30%;" <? } else {?> style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/bg-mask.png'); background-repeat: no-repeat; background-position: right;background-size: 55%;" <? } ?>>
+            <div class="main-banner">
+                <div class="main-banner-content">
                     <div class="section-title service-title">
                         <h1><?php the_title() ?></h1>
                     </div>
                     <?php the_content() ?>
-                    <?= do_shortcode('[contact-form-7 id="fd26338"]') ?>
-                </div>
+                    <? get_template_part( 'template-parts/callme'); ?>
+
+                    
 
             </div>
         </section>
@@ -104,7 +107,7 @@ if ( $sub_services->have_posts() ) : ?>
 
 
 
-    <?php get_template_part('template-parts/consult'); ?>
+   
 
 
 </main>

@@ -18,7 +18,12 @@ $social     = get_field('social', 'options');
 $map        = get_field('map', 'options');
 $logo       = get_field('logo_footer', 'options');
 $copyright   = get_field('copyright', 'options');
-
+$phone      = get_field('phone', 'options');
+$email      = get_field('email', 'options');
+$address    = get_field('address', 'options');
+$social     = get_field('social', 'options');
+$max_url = (is_array($social) && !empty($social['wa'])) ? $social['wa'] : '';
+$tg_url = (is_array($social) && !empty($social['tg'])) ? $social['tg'] : '';
 
 $button_block = get_field('button_block', 'options');
 
@@ -57,7 +62,26 @@ $blog_items = get_posts( array(
                                 <div><?=get_the_privacy_policy_link()?></div>
                         </div>
                         <div class="col">
-                                <button class="button button-white open-popup-btn" data-popup-id="recall">Отправить заявку</button>
+                                        <div class="main-banner-contacts">
+                                    <div class="main-banner-contacts-title">Связаться с нами</div>
+                                    <div class="main-banner-contacts-buttons">         
+                              
+                                        <?php if ($max_url): ?>
+                                        <a class="contact-pill contact-pill-fill" href="<?= esc_url($max_url) ?>" target="_blank" rel="noopener">
+                                           <img src="<?= get_template_directory_uri() ?>/assets/images/max-hero.svg"  alt="Max">
+                                            Max
+                                        </a>
+                                        <?php endif; ?>
+                                        <?php if ($tg_url): ?>
+                                        <a class="contact-pill contact-pill-fill" href="<?= esc_url($tg_url) ?>" target="_blank" rel="noopener">
+                                            <img src="<?= get_template_directory_uri() ?>/assets/images/tg-hero.svg"  alt="Telegram">
+                                            Telegram
+                                        </a>
+                                        <?php endif; ?>
+                                                     </div>
+                        </div> 
+                        </div>
+                             
                         </div>
                         </div> 
                         </div>
@@ -71,7 +95,7 @@ $blog_items = get_posts( array(
                                     <div class="col-1">
                                     <img src="<?=get_template_directory_uri() . '/assets/images/icons/geo.svg'?>" alt="Адрес"/>
                                     </div>
-                                    <div class="col-11 col-md-7">
+                                    <div class="col">
                                     <?=$address['postal_code'] .', '. $address['city'] .', '. $address['addr'] ?>
                                     </div>
                                     </div>
@@ -87,7 +111,7 @@ $blog_items = get_posts( array(
                                     <div class="col-1">
                                     <img src="<?=get_template_directory_uri() . '/assets/images/icons/time_black.svg'?>" alt="Время работы"/>
                                     </div>
-                                    <div class="col-11 col-md-7">
+                                    <div class="col">
                                     <?=$work_time?>
                             </div>            
                             </div>

@@ -20,23 +20,19 @@ $white_block2 = get_field('white_block2');
 
 
     <div class="container">
-        <section class="section-form-text title-form">
-            <div class="row">
-                <div class="col">
+        <section class="section-form-text" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/bg-mask.png'); background-repeat: no-repeat; background-position: right; ">
+  <div class="main-banner">
+                <div class="main-banner-content">
                     <div class="section-title service-title">
                         <h1><?php the_title() ?></h1>
                     </div>
                     <?php the_content() ?>
-
+  <? get_template_part( 'template-parts/callme'); ?>
 
 
                 </div>
-                <div class="col-1">
-                </div>
-                <div class="col">
-                    <?= do_shortcode('[contact-form-7 id="9724a77"]') ?>
-                    <div>
-                    </div>
+               
+            </div>
         </section>
     </div>
 

@@ -83,14 +83,33 @@ p{
     /* gap: 60px; */
 }
 
+.consult-form .section-title.service-title {
+    font-size: 64px;
+    margin-bottom: 1px;
+}
+
+.consult-form .contact-pill-fill {background: #fff;color: #417EEA;border: 1.5px solid #417EEA;}
+.consult-form .contact-pill-outline {background: transparent;color: #ffffff;border: 1.5px solid #ffffff;}
+
+.consult-form .contact-pill-fill:hover, .contact-pill-fill:focus {background: #eaeaea;color: #417EEA!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;!importmat;!importmat;!importma;!importm;!import;!impor;!impo;!imp;!im;!i;!;border-color: #417EEA;}
+.consult-form .contact-pill-outline:hover, .contact-pill-outline:focus {background: #3978e8;color: #ffffff !important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;!importmat;!importmat;!importma;!importm;!import;!impor;!impo;!imp;!im;!i;!;/* border-color: #417EEA; */}
+.footer-logo .main-banner-contacts {display: flex;gap: 20px;/* margin-top: 20px; *//* margin: auto; */}
+.footer-logo .contact-pill img {width: 25px;height: 25px;/* flex: 0 0 18px; *//* display: block; */margin-right: 0;}
+
+.footer-logo .main-banner-contacts-title {margin:auto;margin-right: 10px;font-size: 18px;}
+.footer-logo .contact-pill {padding: 0;color:#ffffff!important;font-size: 16px;/* max-width: 160px; *//* min-width: 166px; */}
+.header-top .contacts-phones-opener a{color: #417EEA!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;}
+
 .header-top-contacts {
     display: flex;
     /* flex: 0.5; */
+    gap: 20px;
 }
 
 .header-top-contacts > div {
     margin-right: 12px;
     margin-top: 5px;
+    margin: auto;
 }
 .header-socials {
     display: flex;
@@ -106,22 +125,27 @@ p{
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #417EEA;
+    /* background: #417EEA; */
     color: #fff;
     flex: 0 0 36px;
     text-decoration: none;
 }
-.header-social:hover,
-.header-social:focus {
-    background: #2f6ad4;
+.header-top-contacts a.header-social,
+.header-top-contacts a.header-social:hover,
+.header-top-contacts a.header-social:focus {
     color: #fff !important;
+    text-decoration: none;
+}
+.header-top-contacts a.header-social:hover,
+.header-top-contacts a.header-social:focus {
+    /* background: #2f6ad4; */
 }
 .header-social svg {
     display: block;
 }
 
 .header-top-addr a, .header-top-contacts a {
-    color: #417EEA;
+    color: #417EEA!important;!importan;!importa;!import;!impor;!impora;!imporna;!imporn;!impor;!impo;!imp;!im;!i;!;
     text-decoration: underline;
 }
 .contacts-phones-opener a,
@@ -323,6 +347,7 @@ section.section-main-banner {
 .main-banner-content {
     width: 50%;
     z-index: 2;
+    /* height: 425px; */
 }
 
 .main-banner-image {
@@ -341,7 +366,7 @@ section.section-main-banner {
     font-style: normal;
     font-weight: 400;
     /* line-height: 120%; */
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 .main-banner-bg-image {
     position: absolute;
@@ -412,34 +437,37 @@ section.section-main-banner {
     padding: 16px 45px;
 }
 .main-banner-contacts-title {
-    color: #417EEA;
+    /* color: #417EEA; */
     font-family: "Onest", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 1.2;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    /* margin: auto; */
 }
 .main-banner-contacts-buttons {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
 }
 .contact-pill {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    height: 48px;
-    padding: 0 18px;
+    gap: 12px;
+    height: 56px;
+    padding: 0 35px;
     border-radius: 999px;
     font-family: "Onest", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 300;
     line-height: 1;
     text-decoration: none;
     white-space: nowrap;
     box-sizing: border-box;
+    min-width: 190px;
 }
 .contact-pill svg {
     width: 18px;
@@ -451,17 +479,19 @@ section.section-main-banner {
     background: #417EEA;
     color: #fff;
     border: 1.5px solid #417EEA;
+    min-width: 210px;
 }
 .contact-pill-fill:hover,
 .contact-pill-fill:focus {
     background: #2f6ad4;
     border-color: #2f6ad4;
-    color: #fff !important;
+    color: #fff!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;
 }
 .contact-pill-outline {
     background: #fff;
     color: #417EEA;
     border: 1.5px solid #417EEA;
+    padding: 0 30px;
 }
 .contact-pill-outline:hover,
 .contact-pill-outline:focus {
@@ -484,6 +514,8 @@ section.section-services {
     line-height: 100%;
     /* letter-spacing: -0.55px; */
     margin-bottom: 80px;
+    /* height: 150px; */
+    min-height: 2lh;
 }
 
 
@@ -503,7 +535,7 @@ section.section-services {
     padding-right: 20px;
 }
 
-.footer-row img {margin-right: 16px;}
+.footer-row img {margin-right: 16px;/* width: 16px; *//* width: 100%; */}
 
 .footer-phone a, .footer-email a {color: #000!important; text-decoration: none;}
 
@@ -1842,7 +1874,7 @@ section.section-vacancy {
     border-bottom: 1px solid #e7e7e7;
 }
 
-.section-form-text {background-color: #F7F7F7!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;padding: 80px 80px;margin: 60px 0;border-radius: 12px;}
+.section-form-text {background-color: #F7F7F7!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;padding: 80px 0 80px 80px;margin: 60px 0;border-radius: 12px;/* height: 625px; */}
 .section-form-text .wpcf7-text {background: #fff!important;}
 .wpcf7-acceptance input[type="checkbox" i] {display: none;}
 
@@ -1851,7 +1883,7 @@ section.section-vacancy {
 a:hover {color: #417EEA !important;}
 
 .myfixedHeader, .myfixedHeader a {
-    color: #000 !important;
+    /* color: #000 !important; */
 }
 
 .myfixedHeader {transition: transform 0.1s, opacity 0.7s ease-in-out !important;
@@ -1863,7 +1895,7 @@ a:hover {color: #417EEA !important;}
 .contacts-phones-full a:last-child {
     border: navajowhite;
 }
-.single-service p{font-size: 18px;margin-bottom: 50px;}
+.single-service p{font-size: 18px;/* line-height: 140%; */margin-bottom: 50px;}
 
 .section-desc-text .col{background-color: #F3F8FE!important;padding: 30px;border-radius: 12px;margin-bottom: 30px;min-height: 225px;/* width: 50%; */}
 .section-desc-text .row {gap: 20px;}
@@ -1877,10 +1909,10 @@ a:hover {color: #417EEA !important;}
 .services-title {font-size: 28px;margin-bottom: 50px;font-weight: 500;margin-top: 40px;}
 .services-text {font-size: 18px;margin-bottom: 20px;color: #A7AFBC;width: 85%;}
 
-.consult-form{color:#fff;background-color: #417EEA!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;padding: 80px 80px 60px;margin: 60px 0;border-radius: 12px;}
+.consult-form{color:#fff;background-color: #417EEA!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;padding: 80px 0px 60px 80px;margin: 60px 0;border-radius: 12px;}
 .consult-form .wpcf7-form-control.wpcf7-submit {background: #fff;color: #000;font-weight: 500;}
 .consult-form span.wpcf7-form-control.wpcf7-acceptance.optional {color: #fff;}
-.consult-form {background: url('/wp-content/themes/dominant/assets/images/icons/consult_bg.png');background-repeat: no-repeat;background-position: top;background-position-x: right;/* background-position: 100% 100%; */}
+.consult-form {background: url('/wp-content/themes/dominant/assets/images/consult_bg.png');background-repeat: no-repeat;background-position: top;background-position-x: right;/* background-position: 100% 100%; *//* width: 100%; */}
 .consult-form {font-size: 20px;}
 .consult-form .wpcf7-form-control:not(.wpcf7-submit) {background: #6999EE;}
 
@@ -1892,7 +1924,7 @@ a:hover {color: #417EEA !important;}
 
 .single-parent-service h1 {font-size: 60px;margin-bottom: 20px;}
 .single-parent-service h2 {font-size: 50px;margin-bottom: 20px;}
-.single-parent-service .single-top-announce {width:100%;margin-bottom: 50px;}
+.single-parent-service .single-top-announce {width:100%;margin-bottom: 100px;}
 .single-parent-service .service-list a {text-decoration: none;font-size: 28px;color: #000;display: block;margin-bottom: 20px;}
 .single-parent-service .service-list a:hover {color: #417EEA !important;}
 .service-card2 {width: 98%;}

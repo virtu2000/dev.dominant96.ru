@@ -18,28 +18,35 @@
     .section-strateg-text .services-title {font-size: 24px;}
     .single-parent-service .section-form-text {padding: 60px;}
     .main-banner-title {font-size: 52px;}
-    .single-parent-service h1 {font-size: 52px;}
+    .single-parent-service h1 {font-size: 44px;}
     .single-parent-service h2 {font-size: 42px;}
     .single-parent-service .service-list a {font-size: 24px;}
     .single-service p{font-size: 16px;}
     .services-title {font-size: 24px;}
     .section-title {font-size: 44px;margin-bottom: 20px;}
     .services-text {font-size: 16px;}
+
+    .contact-pill-fill {min-width: 200px;width: 200px;}
+    .main-banner-content {width: 70%;}
 }
 @media (max-width: 768px) {
 
-
+.footer-logo .contact-pill {min-width: 30%;width: 42%;}
+    .contact-pill-outline {width: 100%!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;}
+.footer-logo .main-banner-contacts-title{margin: 40px 0 0px 0;width: 100%;}
+.contact-pill img {width: 25px;height: 25px;}
+.main-banner-contacts-buttons {gap: 10px;/* width: 40%; */}
+.footer-logo .main-banner-contacts {flex-direction: column!important;gap: 20px;width: 100vw;}
     .service-card, a[href*="service"] {
-    display: flex!important;  /* Ð’Ñ‹ÑÑ‚Ñ€Ð°Ð¸Ð²Ð°ÐµÐ¼ Ð¸ÐºÐ¾Ð½ÐºÑƒ (::before) Ð¸ Ñ‚ÐµÐºÑÑ‚ Ð² Ñ€ÑÐ´ */
-    /* align-items: center; */
-    gap: 12px;              /* Ð Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð¼ÐµÐ¶Ð´Ñƒ Ð¸ÐºÐ¾Ð½ÐºÐ¾Ð¹ Ð¸ Ñ‚ÐµÐºÑÑ‚Ð¾Ð¼ */
-    /* margin: auto; */
+    display: flex!important;  
+    gap: 12px;             
+    
 }
 
     .section-strateg-text .col {padding: 20px;min-height: 320px;}
     .container {padding: 0 20px;}
 
-    .main-banner-bg-image {background-position: bottom;height: 900px;/* width: 200%; *//* zoom: normal; *//* background-size: cover; *//* top: 150px; *//* background-size: 150%; */background-image: url('https://dev.dominant96.ru/wp-content/uploads/2026/10/2ban.jpg');"";}
+    .main-banner-bg-image {background-position: bottom;height: 950px;/* width: 200%; *//* zoom: normal; *//* background-size: cover; *//* top: 150px; *//* background-size: 150%; */background-image: url('https://dev.dominant96.ru/wp-content/uploads/2026/10/2ban.jpg');"";}
     .section.section-main-banner {background: #fcfcfc;}
     .main-banner-bg-image:before {
     background: #000;
@@ -82,7 +89,7 @@ section.section-single-top {padding: 80px 0 10px;}
 
 .single-parent-service h1 {font-size: 40px;margin-bottom: 20px;}
 .single-parent-service .section-form-text {padding: 40px 20px;margin: 20px 0;border-radius: 12px;height: 830px;background-position: 100% 100%!important;background-size: 45%!important;}
-.single-parent-service .section-form-text img {width: 100%;margin-bottom: 20px;}
+.single-parent-service .section-form-text img {/* width: 100%; *//* margin-bottom: 20px; */}
 section.section-services {padding: 90px 0 25px;}
 
 .popup{ left:10px;}
@@ -292,8 +299,11 @@ section.section-about-us .row {flex-direction: column;}
     }
     .contact-pill {
         height: 44px;
-        padding: 0 14px;
+        /* padding: 0 14px; */
         font-size: 15px;
+        /* padding: 0 20px; */
+        width: 48%;
+        min-width: auto;
     }
     section {
         /* padding: 120px 0 400px !important; */!i;!;

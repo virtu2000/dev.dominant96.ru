@@ -37,6 +37,9 @@ $services_tree = get_taxonomy_tree('services', 'service');
             </div>
         </div>
     </section>
+    <?php get_template_part( 'template-parts/consult' ); ?>
 </main>
+
+
 
 <?php get_footer(); // подключаем footer.php ?>
