@@ -102,11 +102,18 @@ $services_tree = get_taxonomy_tree('services', 'service');
                                     </div>
                                     <?endif;?>
                                 </div>
-                                
-                            </div>
-                            <div class="header-top-buttons">
-<!--                                <a class="button button-white" href="#">Обратный звонок</a>-->
-                                <button class="button button-white open-popup-btn" data-popup-id="recall">Отправить заявку</button>
+                                <div class="header-socials">
+                                    <?php if(!empty($social['wa'])): ?>
+                                    <a class="header-social" href="<?=esc_url($social['wa'])?>" target="_blank" rel="noopener" aria-label="Max">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.1 3.1c-4.9.2-8.8 4.2-8.8 9 0 1.7.5 3.3 1.4 4.6l-.9 3.4c-.2.6.4 1.1.9.8l3.7-1.6c1.1.5 2.4.7 3.7.7 5.1 0 9.2-4 9.2-9.1 0-5-4.1-9-9.2-8.8z"/></svg>
+                                    </a>
+                                    <?php endif; ?>
+                                    <?php if(!empty($social['tg'])): ?>
+                                    <a class="header-social" href="<?=esc_url($social['tg'])?>" target="_blank" rel="noopener" aria-label="Telegram">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.8 4.2 18.2 20.1c-.3 1.2-1 1.5-2 .9l-5.6-4.1-2.7 2.6c-.3.3-.5.5-1.1.5l.4-5.7 10.4-9.4c.4-.4-.1-.6-.6-.2L6.5 13 1.1 11.3C-.1 10.9-.1 10.1 1.3 9.5L20.2 2.6c1-.4 1.9.2 1.6 1.6z"/></svg>
+                                    </a>
+                                    <?php endif; ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,7 +163,7 @@ $services_tree = get_taxonomy_tree('services', 'service');
                         <div class="menu-info-email"><a href="mailto:<?=$email ?>"><?=$email ?></a></div>
                         <div class="menu-info-social">
                             <?php if($social['vk']): ?><a class="social-link" href="<?=$social['vk']?>"><img src="<?=get_template_directory_uri() . '/assets/images/icons/vk_black.svg'?>" alt="VK"></a><?php endif; ?>
-                            <?php if($social['wa']): ?><a class="social-link" href="<?=$social['wa']?>"><img src="<?=get_template_directory_uri() . '/assets/images/icons/wa_black.svg'?>" alt="WhatsApp"></a><?php endif; ?>
+                            <?php if($social['wa']): ?><a class="social-link" href="<?=$social['wa']?>"><img src="<?=get_template_directory_uri() . '/assets/images/icons/wa_black.svg'?>" alt="Max"></a><?php endif; ?>
                             <?php if($social['tg']): ?><a class="social-link" href="<?=$social['tg']?>"><img src="<?=get_template_directory_uri() . '/assets/images/icons/tg_black.svg'?>" alt="Telegram"></a><?php endif; ?>
                         </div>
                     </div>

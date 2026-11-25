@@ -31,8 +31,33 @@ if( function_exists('acf_add_options_page') ) {
         'updated_message'	=> __("Изменения сохранены", 'acf'),
     ));
 
+}
 
+add_filter('acf/load_field/name=wa', 'dominant_rename_whatsapp_field_to_max');
+function dominant_rename_whatsapp_field_to_max($field) {
+    $field['label'] = 'Max';
+    return $field;
+}
 
+add_action('acf/init', 'dominant_move_max_link_into_social', 20);
+function dominant_move_max_link_into_social() {
+    if (get_option('dominant_wa_is_max') || !function_exists('get_field') || !function_exists('update_field')) {
+        return;
+    }
+
+    $social = get_field('social', 'options');
+    if (!is_array($social)) {
+        $social = array();
+    }
+
+    $home = untrailingslashit(home_url());
+    $current = isset($social['wa']) ? untrailingslashit((string) $social['wa']) : '';
+    if ($current === '' || $current === $home) {
+        $social['wa'] = 'https://max.ru/u/f9LHodD0cOLbRi8OnNfng-yymh_edoJRsdEYNw-NYph7EVDUatCTd6qI39Y';
+        update_field('social', $social, 'options');
+    }
+
+    update_option('dominant_wa_is_max', 1, false);
 }
 
 /**

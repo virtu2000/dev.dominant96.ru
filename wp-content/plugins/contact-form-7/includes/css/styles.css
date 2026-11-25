@@ -53,10 +53,9 @@
 
 .wpcf7-not-valid-tip {
 	color: #dc3232; /* Red */
-	font-size: 0.7em;
+	font-size: 1em;
 	font-weight: normal;
 	display: block;
-	margin-top: -10px;
 }
 
 .use-floating-validation-tip .wpcf7-not-valid-tip {

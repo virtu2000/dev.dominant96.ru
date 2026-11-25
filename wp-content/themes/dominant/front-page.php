@@ -63,12 +63,34 @@ $blog_items = get_posts( array(
                             <div class="main-banner-content">
                                 <h1 class="main-banner-title"><?=$main_banner['header']?></h1>
                                 <div class="main-banner-text"><?=$main_banner['text']?></div>
-                                <div class="main-banner-button">
-                                    <?php if($main_banner['button']['popup']): ?>
-                                        <button class="button button-white open-popup-btn" data-popup-id="recall"><?=$main_banner['button']['text']?></button>
-                                    <?php else: ?>
-                                        <a class="button button-white" href="<?=$main_banner['button']['link']?>"><?=$main_banner['button']['text']?></a>
-                                    <?php endif; ?>
+                                <div class="main-banner-contacts">
+                                    <div class="main-banner-contacts-title">Связаться с нами</div>
+                                    <div class="main-banner-contacts-buttons">
+                                        <?php
+                                        $banner_phones = get_field('phones', 'options');
+                                        $banner_phone = (is_array($banner_phones) && !empty($banner_phones[0]['phone'])) ? $banner_phones[0]['phone'] : '';
+                                        $max_url = (is_array($social) && !empty($social['wa'])) ? $social['wa'] : '';
+                                        $tg_url = (is_array($social) && !empty($social['tg'])) ? $social['tg'] : '';
+                                        ?>
+                                        <?php if ($max_url): ?>
+                                        <a class="contact-pill contact-pill-fill" href="<?= esc_url($max_url) ?>" target="_blank" rel="noopener">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.1 3.1c-4.9.2-8.8 4.2-8.8 9 0 1.7.5 3.3 1.4 4.6l-.9 3.4c-.2.6.4 1.1.9.8l3.7-1.6c1.1.5 2.4.7 3.7.7 5.1 0 9.2-4 9.2-9.1 0-5-4.1-9-9.2-8.8z"/></svg>
+                                            Max
+                                        </a>
+                                        <?php endif; ?>
+                                        <?php if ($tg_url): ?>
+                                        <a class="contact-pill contact-pill-fill" href="<?= esc_url($tg_url) ?>" target="_blank" rel="noopener">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.8 4.2 18.2 20.1c-.3 1.2-1 1.5-2 .9l-5.6-4.1-2.7 2.6c-.3.3-.5.5-1.1.5l.4-5.7 10.4-9.4c.4-.4-.1-.6-.6-.2L6.5 13 1.1 11.3C-.1 10.9-.1 10.1 1.3 9.5L20.2 2.6c1-.4 1.9.2 1.6 1.6z"/></svg>
+                                            Telegram
+                                        </a>
+                                        <?php endif; ?>
+                                        <?php if ($banner_phone): ?>
+                                        <a class="contact-pill contact-pill-outline" href="tel:<?= esc_attr(clear_phone($banner_phone)) ?>">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 3.8h2.1c.4 0 .7.3.8.6l.8 2.5a.8.8 0 0 1-.2.8l-1.3 1.3a12 12 0 0 0 5.5 5.5l1.3-1.3c.2-.2.5-.3.8-.2l2.5.8c.3.1.6.4.6.8V17a1.8 1.8 0 0 1-2 1.8A14.8 14.8 0 0 1 5.2 6.8 1.8 1.8 0 0 1 7 3.8z"/></svg>
+                                            <?= esc_html($banner_phone) ?>
+                                        </a>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
                             <div class="main-banner-image" ><?php if($main_banner['image']): ?><img src="<?= $main_banner['image'] ?>" alt="<?=$main_banner['header']?>"><?php endif; ?></div>

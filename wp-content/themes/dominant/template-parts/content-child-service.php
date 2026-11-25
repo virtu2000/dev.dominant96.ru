@@ -20,7 +20,7 @@ $white_block2 = get_field('white_block2');
 
 
     <div class="container">
-        <section class="section-form-text">
+        <section class="section-form-text title-form">
             <div class="row">
                 <div class="col">
                     <div class="section-title service-title">

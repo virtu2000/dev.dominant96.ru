@@ -73,16 +73,22 @@ $sub_services = new WP_Query( $args );
 if ( $sub_services->have_posts() ) : ?>
     <div class="row service-list">
         <?php while ( $sub_services->have_posts() ) : $sub_services->the_post(); ?>
-            <div class="service-card col-sm-6">
-                
+        <div class="col-sm-6">
+            <div class="service-card ">
+            <div><img  style="margin-top:-2px;" src="/wp-content/themes/dominant/assets/images/icons/list-left.svg" alt="Right arrow"></div>    
+
             <div class="col">
                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <hr>
-               <?php the_content(); ?>
+                
                 
             </div>
             <div class="col-1"><img  src="/wp-content/themes/dominant/assets/images/icons/list-right.svg" alt="Right arrow"></div>
             </div>
+            <div class="service-card2 ">
+       
+               <?php the_content(); ?>
+            </div>       
+        </div>
         <?php endwhile; ?>
     </div>
     <?php wp_reset_postdata(); ?>
